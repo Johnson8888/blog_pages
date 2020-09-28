@@ -93,7 +93,7 @@ cat ~/.ssh/id_rsa.pub
 ```
 或者可以找到这个文件并打开它，复制里面的内容。
 
-登录github账号 找打 ```setting```
+登录github账号 找到 ```setting```
 ![setting_20200928](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/setting_20200928.png?token=ABHYKC5W7STFHCWPLTJXG5S7OFODK)
 
 先点击 ``` SSH and GPG keys``` 然后再点击 ``` New SSH key ``` 进入到配置 SSH Key 的页面

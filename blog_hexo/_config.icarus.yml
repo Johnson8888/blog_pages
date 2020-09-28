@@ -207,7 +207,8 @@ widgets:
         social_links:
             Github: 'https://github.com/Johnson8888'
             CSDN: 'https://blog.csdn.net/nsurl'
-            掘金: 'https://juejin.im/user/2638445746091757'  
+            掘金: 'https://juejin.im/user/2638445746091757' 
+            简书: 'https://www.jianshu.com/u/0423d00474f3' 
             # Dribbble:
             #     icon: fab fa-dribbble
             #     url: 'https://dribbble.com'

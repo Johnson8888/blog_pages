@@ -71,7 +71,7 @@ INFO  Start processing
 INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop. 
 ```
 预览效果如下
-![preview_hexo_20200928](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/preview_hexo_20200928.jpg?token=ABHYKC6GGI7M7RYCFYEQZHK7OFLXA)
+![preview_hexo_20200928](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/preview_hexo_20200928.jpg)
 
 ##### 配置客户端git  添加SSH Key到github
 如果已经配置过，该步骤可以忽略
@@ -94,7 +94,7 @@ cat ~/.ssh/id_rsa.pub
 或者可以找到这个文件并打开它，复制里面的内容。
 
 登录github账号 找到 ```setting```
-![setting_20200928](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/setting_20200928.png?token=ABHYKC5W7STFHCWPLTJXG5S7OFODK)
+![setting_20200928](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/setting_20200928.png)
 
 先点击 ``` SSH and GPG keys``` 然后再点击 ``` New SSH key ``` 进入到配置 SSH Key 的页面
 ![select_sshkey_20200928](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/select_sshkey_20200928.jpg?token=ABHYKC5WITD7CZYQDC4ABAK7OFO3W)

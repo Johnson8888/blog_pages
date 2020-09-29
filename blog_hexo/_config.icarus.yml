@@ -202,10 +202,9 @@ widgets:
         # Email address for the Gravatar
         gravatar: 
         # URL or path for the follow button
-        follow_link: 'https://github.com/Johnson8888'
+        follow_link: 'https://weibo.com/nsurl'
         # Links to be shown on the bottom of the profile widget
         social_links:
-            微博: 'https://weibo.com/nsurl'
             Github: 'https://github.com/Johnson8888'
             CSDN: 'https://blog.csdn.net/nsurl'
             掘金: 'https://juejin.im/user/2638445746091757' 

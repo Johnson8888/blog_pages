@@ -1,8 +1,10 @@
 ---
-title: [Flutter基础1]8个Flutter的优势以及为什么要在下一个项目中尝试Flutter
+title: 【Flutter基础1】8个Flutter的优势以及为什么要在下一个项目中尝试Flutter
 date: 2020-10-04 14:30:08
-tags:
+tags: 
+    -Flutter
 ---
+
 让我们一起来了解Flutter与其他跨平台框架的优势，以及这些优势在开发流程中的作用。
 
 

@@ -76,6 +76,7 @@ navbar:
         主页: /
         归档: /archives
         Flutter: /categories
+        Python: /categories
         About: /about
     # Links to be shown on the right of the navigation bar
     links:

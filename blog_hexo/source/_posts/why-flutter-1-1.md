@@ -74,9 +74,16 @@ Flutter是使用[Skia](https://github.com/google/skia)作为底层的渲染引�
 ##### <span id="jump2_8">8. 不只是能运行在移动端</span>
 Flutter不仅是可以在移动设备上使用，还支持Web端和桌面端。在2018年的I / O会议上，Google展示了Flutter Web的技术，这使得在浏览器中运行纯Flutter应用程序成为可能，且不需要修改任何源代码。
 下面是演示视频：
-<video id="video" controls="" preload="none" poster="https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_09_30_video_cover.jpg">
-      <source id="mp4" src="https://www.bilibili.com/video/BV1iT4y1c71E/E" type="video/mp4">
-</video>
+
+{% raw %}
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=927277621&bvid=BV1iT4y1c71E&cid=241986005&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;">
+    </iframe>
+</div>
+
+{% endraw %}
+
 不能打开视频的可以点击[这里](https://www.bilibili.com/video/BV1iT4y1c71E/)查看
 官方的这一操作，意味着Flutter从移动开发框架升级到了全平台开发框架的行列。
 如果我们不需要在移动端做部署和使用，技术娴熟的Flutter程序员可以让Flutter在热门平台上运行，包括但不限于Android、iOS、Web浏览器、Windows、macOS、Linux甚至是嵌入式设备。同样的代码可以在这些任何平台上运行，且不需要修改任何Dart代码。

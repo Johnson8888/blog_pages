@@ -79,10 +79,10 @@ navbar:
         Python: /categories
         About: /about
     # Links to be shown on the right of the navigation bar
-    links:
-        Download on GitHub:
-            icon: fab fa-github
-            url: 'https://github.com/ppoffice/hexo-theme-icarus'
+    #links:
+    #    Download on GitHub:
+    #        icon: fab fa-github
+    #        url: 'https://github.com/ppoffice/hexo-theme-icarus'
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section

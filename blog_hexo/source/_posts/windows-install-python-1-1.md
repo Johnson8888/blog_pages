@@ -1,6 +1,11 @@
 ---
 title: 【Python 1-1】Windows 10 安装Python3环境
 date: 2020-10-04 21:56:14
+categories: Python
+keywords: Windows Python
+toc: true
+cover: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/page_conver_python.jpg
+thumbnail: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/page_conver_python.jpg
 tags:
     - Python
 ---
@@ -10,6 +15,7 @@ tags:
 ##### 1. 首先打开Python [官网](https://www.python.org/)
 ##### 2. 在官网的主页找到 `Downloads`选项并点击
 ![python_org](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/Inked2020_10_4_python_org_LI.jpg)
+<!--more-->
 
 ##### 3. 找到 `Windows`选项 并点击 `Python3.8.5`即可下载Python3安装包
 由于官方在不断更新和维护，所以这里不一定是恰好是`Python3.8.5`，选择自己想安装的版本即可

@@ -1,19 +1,27 @@
 ---
-title: 【Flutter 1-2】在 Windows 10下安装Flutter+Dart+Android Studio 配置Flutter开发环境
+title: 【Flutter 1-2】在 Windows 10下配置Flutter开发环境
 date: 2020-09-28 22:30:08
+cover: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/flutter-cover.jpg
+thumbnail: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/flutter-cover.jpg
+toc: true
+categories: Flutter
 tags:
     - Flutter
+
 ---
 
-#### 在 Windows 10下安装Flutter+Dart+Android Studio 配置Flutter开发环境
+#### **在 Windows 10下安装Flutter+Dart+Android Studio 配置Flutter开发环境**
 [文章首发地址](https://johnson8888.github.io/2020/09/28/windows-install-flutter/)
 
-##### 配置环境变量
+##### **配置环境变量**
 由于部分网站被墙的原因，我们需要先配置Flutter国内镜像地址，这两个地址是由Flutter官方维护的，可以放心使用
 首先我们找到`此电脑`点击右键，然后点击`属性`
 ![2020_10_07_my_computer](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_10_07_my_computer.png)
+<!--more-->
+
 然后点击`高级系统设置`
 ![2020_10_07_heigh_setting](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_10_07_heigh_setting.png)
+
 点击`高级`然后找到下面的`环境变量`并点击
 ![2020_10_07_huanjingbianliang](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_10_07_huanjingbianliang.png)
 点击`新建`
@@ -25,7 +33,7 @@ tags:
 ![2020_10_07_input_storage](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_10_07_input_storage.png)
 到这里需要的环境变量就配置完成了
 
-##### 开始安装Flutter
+##### **开始安装Flutter**
 - 下载安装文件并解压缩
 [点击进入官网下载需要的版本](https://flutter.dev/docs/development/tools/sdk/releases)
 如果不能打开该网站，[可去我的网盘去取版本是1.22.0](https://pan.baidu.com/s/1SgNz14eVc1SDlHlTH7Y0mA) 提取码: awjy
@@ -68,7 +76,7 @@ tags:
 然后再运行一次`flutter doctor`已经没有错误提示了。
 这样我们的Flutter的环境就配置完成了。
 
-##### 安装Android 模拟器
+##### **安装Android 模拟器**
 打开Android Studio 找到右上角的`AVD Manager`并点击
 ![2020_10_07_android_studio_avd_manager](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_10_07_android_studio_avd_manager.png)
 
@@ -78,7 +86,7 @@ tags:
 ![2020_10_07_hardware_gles](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_10_07_hardware_gles.png)
 
 
-##### 新建Flutter项目并运行
+##### **新建Flutter项目并运行**
 
 点击Android Studio 里面的 `File`->`New`->`New Flutter Project`
 新建项目并打开
@@ -89,7 +97,7 @@ tags:
 
 
 
-##### 可能会遇到的问题
+##### **可能会遇到的问题**
 在执行 `flutter doctor --android-licenses`出现以下错误
 ![2020_10_07_fluuter_sdk_error](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_10_07_fluuter_sdk_error.png)
 需要我们手动安装`Android SDK Platform-Tools`

@@ -1,20 +1,27 @@
 ---
 title: Mac下使用GitHub+Hexo搭建个人博客
 date: 2020-09-26 14:09:54
+cover: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/page_conver_hexo.png
+thumbnail: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/page_conver_hexo.png
+toc: true
+description: 安装和配置Hexo博客
+auto_excerpt:
+  enable: true
+  length: 150
 tags:
-   -Github
+   - Github
 ---
 
 
 开始之前需要在电脑上安装好[Git](https://git-scm.com/)和[node.js](https://nodejs.org/en/)，Mac上可以使用Homebrew命令行工具来安装Git和node.js
 
-##### 安装Homebrew
+##### **安装Homebrew**
 在命令行工具输入以下命令，如果已经安装过Homebrew可以忽略
 ``` bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
-
-##### Homebrew 安装 node.js
+<!--more-->
+##### **Homebrew 安装 node.js**
 ``` bash
 brew install node
 ```
@@ -35,7 +42,7 @@ nmp -v
 ``` bash
 6.13.4
 ```
-##### Homebrew 安装git
+##### **Homebrew 安装git**
 ``` bash
 brew install git
 ```
@@ -47,7 +54,7 @@ git -v
 ``` bash
 git version 2.24.3 (Apple Git-128)
 ```
-##### 使用 npm 安装 [hexo](https://hexo.io/zh-cn/docs/)
+##### **使用 npm 安装 [hexo](https://hexo.io/zh-cn/docs/)**
 ``` bash
 sudo npm install -g hexo-cli
 ``` 
@@ -73,7 +80,9 @@ INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 预览效果如下
 ![preview_hexo_20200928](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/preview_hexo_20200928.jpg)
 
-##### 配置客户端git  添加SSH Key到github
+
+
+##### **配置客户端git  添加SSH Key到github**
 如果已经配置过，该步骤可以忽略
 在命令行输入配置用户名和账号的命令
 ``` bash
@@ -105,7 +114,7 @@ cat ~/.ssh/id_rsa.pub
 
 点击 ` Add SSH Key ` 即可
 
-##### 本地博客关联到Github主页
+##### **本地博客关联到Github主页**
 登录Github并且创建一个名字为 `username.githug.io` 的仓库，比如我的仓库名字为 `Johnson8888.github.io`
 因为我已经创建过了，所以会显示红色，如果创建过，会显示绿色的，然后点击创建。切记一定要选择 `Public`，否定不能访问。
 ![create_my_repo_20200928](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/create_my_repo_20200928.png?token=ABHYKCYY4HSYNU4W6VVG5Q27OFPVO)
@@ -133,7 +142,7 @@ hexo d
 ```
 `hexo d `执行成功后，就可以查看我们的[Blog](https://johnson8888.github.io)了
 
-##### 开始写博客
+##### **开始写博客**
 在命令行执行
 ```
 hexo new firstPage.md 
@@ -145,11 +154,11 @@ hexo g
 hexo d
 ```
 就可以同步博客到github
-#### Todo
+#### **Todo**
 - 申请域名指向博客，这样就可以直接使用域名访问了
 - hexo支持很多模板样式 可以去[官网](https://hexo.io/themes/)选择自己喜欢的使用
 
-##### 附 hexo常用命令
+##### **附 hexo常用命令**
 ```
 hexo n "博客名称"  => hexo new "博客名称"   #这两个都是创建新文章，前者是简写模式
 hexo p  => hexo publish

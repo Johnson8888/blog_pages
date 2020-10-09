@@ -16,8 +16,9 @@ tags:
 ##### **配置环境变量**
 由于部分网站被墙的原因，我们需要先配置Flutter国内镜像地址，这两个地址是由Flutter官方维护的，可以放心使用
 首先我们找到`此电脑`点击右键，然后点击`属性`
-![2020_10_07_my_computer](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_10_07_my_computer.png)
 <!--more-->
+![2020_10_07_my_computer](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_10_07_my_computer.png)
+
 
 然后点击`高级系统设置`
 ![2020_10_07_heigh_setting](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_10_07_heigh_setting.png)

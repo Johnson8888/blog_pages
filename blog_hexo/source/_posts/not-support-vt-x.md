@@ -9,8 +9,6 @@ tags:
 ---
 
 
-
-
 [文章首发地址](http://fulade.me/2020/10/08/not-support-vt-x/)
 
 #### **出现这个问题的原因**

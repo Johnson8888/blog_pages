@@ -4,6 +4,7 @@ date: 2020-10-08 22:04:04
 toc: true
 cover: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/page_conver_android_studion.png
 thumbnail: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/page_conver_android_studion.png
+categories: Flutter
 tags:
     - Flutter
 ---

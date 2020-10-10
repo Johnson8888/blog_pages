@@ -2,8 +2,8 @@
 title: 【Flutter 1-1】8个Flutter的优势以及为什么要在下一个项目中尝试Flutter
 date: 2020-10-04 14:30:08
 toc: true
-cover: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/flutter-cover.jpg
-thumbnail: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/flutter-cover.jpg
+cover: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg
+thumbnail: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg
 categories: Flutter
 tags: 
     - Flutter

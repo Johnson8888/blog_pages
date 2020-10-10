@@ -5,9 +5,6 @@ cover: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/pa
 thumbnail: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/page_conver_hexo.png
 toc: true
 description: 安装和配置Hexo博客
-auto_excerpt:
-  enable: true
-  length: 150
 tags:
    - Github
 ---

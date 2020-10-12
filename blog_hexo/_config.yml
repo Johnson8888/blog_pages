@@ -45,7 +45,7 @@ prismjs:
   line_number: true
   tab_replace: ''
 index_generator:
-  per_page: 8
+  per_page: 7
 archive_generator:
   per_page: 20  #为0时表示不分页全展示
   yearly: true  #按年生成归档

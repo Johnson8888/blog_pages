@@ -44,19 +44,19 @@ Python的语法跟自然语言很相似，使用起来非常简单。同时它�
 
 在实际的编程过程中，Python的语法更简单
 ``` Java
-/// 用 Java 输出 "Hello Word"
-public class HelloWord {
+/// 用 Java 输出 "Hello World"
+public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello Word");
+        System.out.println("Hello World");
     }
 }
 ```
 
 ``` Python
-### 用Python输出 "Hello Word"
-print("Hello Word")
+### 用Python输出 "Hello World"
+print("Hello World")
 ```
-使用`Java`语言输出`Hello Word`，必须要写三行以上的代码，而使用`Python`语言一行就可以，如此简单的语法非常适合初学者。
+使用`Java`语言输出`Hello World`，必须要写三行以上的代码，而使用`Python`语言一行就可以，如此简单的语法非常适合初学者。
 ##### **9.高可移植性和高可扩展性**
 Python的可移植性体现在目前大多数平台都支持Python。它不仅能运行在Windows上，还可以运行在MacOS、Linux等平台上。
 Python又被称为胶水语音，使用Python可以很方便的集成Java和.NET组件，同时也支持调用C和C++库。

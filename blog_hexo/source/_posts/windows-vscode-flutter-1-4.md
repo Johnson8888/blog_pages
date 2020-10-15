@@ -27,3 +27,11 @@ Visual Studio Code（简称VS Code）是一个由微软开发，同时支持Wind
 ![2020_10_09_vscode_new_flutter](https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/2020_10_09_vscode_new_flutter.png)
 注意：创建项目完成之后，VSCode会帮助我们来安装`Dart`语言相关的依赖。
 这样我们在VSCode下配置Flutter环境就算完成了。
+
+
+
+##### 视频教程
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=287403050&bvid=BV1gf4y1B7yJ&cid=245689967&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;">
+    </iframe>
+</div>

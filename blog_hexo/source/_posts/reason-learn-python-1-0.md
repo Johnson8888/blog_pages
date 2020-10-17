@@ -8,6 +8,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_10_10_
 tags:
     - Python
 ---
+
 #### **Python的由来**
 Python的创始人是[吉多·范罗苏姆](https://baike.baidu.com/item/%E5%90%89%E5%A4%9A%C2%B7%E8%8C%83%E7%BD%97%E8%8B%8F%E5%A7%86)，1989年他在阿姆斯特丹的CWI工作，圣诞节期间，吉多·范罗苏姆为了打发圣诞节的无聊，决定开发一个新的脚本解释程序，作为ABC 语言的一种继承。之所以选择Python作为编程语言的名字，是因为他是BBC电视剧——蒙提·派森的飞行马戏团的爱好者。
 #### **Python是什么**

@@ -1,5 +1,5 @@
 ---
-title: 【Python 1-4】Python的第一个程序 Hello World
+title: 【Python 1-3】Python的第一个程序 Hello World
 categories: Python
 keywords: Python
 toc: true

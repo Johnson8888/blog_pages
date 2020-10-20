@@ -1,5 +1,5 @@
 ---
-title: 【Python 1-3】Visual Studio Code(VSCode) 配置 Python开发环境
+title: 【Python 1-2】Visual Studio Code(VSCode) 配置 Python开发环境
 categories: Python
 keywords: Python
 toc: true

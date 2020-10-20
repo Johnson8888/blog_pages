@@ -1,5 +1,5 @@
 ---
-title: 【Python 1-3】Python的第一个程序 Hello World
+title: 【Python 1-4】Python的第一个程序 Hello World
 categories: Python
 keywords: Python
 toc: true
@@ -33,3 +33,10 @@ print("hello world!")
 其实在日常工作中，我个人就是使用VSCode来开发，所以也是使用VSCode来运行和调试Python程序的，这样简单也方便，直接使用快捷键运行一下就可以了。
 但是当我们的Python程序需要部署在一台没有安装任何IDE工具的机器上的时候，这个时候我们就可以使用命令行来启动我们的Python程序来运行。
 同样的，当其他脚本想启动我们的Python程序的时候，大多数情况也是通过命令行工具来运行的。
+
+
+#####  **视频教程**
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=800034187&bvid=BV1My4y187ov&cid=247600869&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+

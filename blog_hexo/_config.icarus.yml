@@ -265,7 +265,7 @@ widgets:
         position: left
         type: adsense
         # AdSense client ID
-        client_id: 'pub-7413169030836136'
+        client_id: 'ca-pub-7413169030836136'
         # AdSense AD unit ID
         slot_id: 'ca-pub-7413169030836136'
 # Plugin configurations

@@ -16,7 +16,7 @@ date: 2020-10-20 22:16:07
 ##### **使用 VSCode 作为开发Python的IDE工具**
 IDE(Integrated Development Environment, 集成开发环境)，目前支持Python的IDE有很多。有PyCharm、Eclipse、Atom、Anaconda、Sublime Text等等。我个人更喜欢使用 Visual Studio Code 也就是 VSCode。如果大家有自己喜欢的IDE工具，尽情享用！
 <!--more-->
-
+[文章首发地址](http://fulade.me/2020/10/20/vscode-install-python-1-2/)
 ##### **在 VSCode 里面安装Python扩展工具**
 首先确保我们的机器上面已经安装好了`Python`环境，如果没有安装，[可参考我的另一篇教程来安装Python环境](http://fulade.me/2020/10/04/windows-install-python-1-1/)，步骤很简单。
 然后我们打开已经安装好的VSCode，找到 `Extensions`并点击(或使用快捷键`Ctrl+Shift+X`来打开)。

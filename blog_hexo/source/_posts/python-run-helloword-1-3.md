@@ -19,7 +19,7 @@ date: 2020-10-20 22:15:45
 下面我们将写出Python中的"Hello, World!"程序，并使用两种方式运行它。
 <!--more-->    
 <br>
-
+[文章首发地址](http://fulade.me/2020/10/20/python-run-helloword-1-3/)
 ##### **书写 Hello World程序**
 首先我们打开VSCode，新建一个文件，想必大家也都知道了，`Python`的输出语句非常简单，我们只需要在新建的文件中写入如下一行代码就可以了
 ``` Python

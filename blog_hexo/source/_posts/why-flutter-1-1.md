@@ -1,4 +1,5 @@
 ---
+permalink: why-flutter-1-1.html
 title: 【Flutter 1-1】8个Flutter的优势以及为什么要在下一个项目中尝试Flutter
 date: 2020-10-04 14:30:08
 toc: true

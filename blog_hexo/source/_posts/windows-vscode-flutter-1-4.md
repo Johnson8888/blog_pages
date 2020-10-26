@@ -1,4 +1,5 @@
 ---
+permalink: windows-vscode-flutter-1-4.html
 title: 【Flutter 1-4】Windows下VSCode配置Flutter开发环境
 tags:
   - Flutter

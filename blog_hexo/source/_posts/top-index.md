@@ -1,4 +1,5 @@
 ---
+permalink: top_index.html
 title: 【置顶】博客阅读指北
 date: 2020-10-26 11:05:24
 top: true

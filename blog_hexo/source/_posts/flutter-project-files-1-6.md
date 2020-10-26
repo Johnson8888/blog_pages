@@ -1,4 +1,5 @@
 ---
+permalink: flutter-project-files-1-6.html
 title: 【Flutter 1-6】Flutter项目目录结构
 date: 2020-10-25 15:14:47
 toc: true

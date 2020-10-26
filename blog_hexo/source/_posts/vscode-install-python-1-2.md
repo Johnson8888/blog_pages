@@ -1,4 +1,5 @@
 ---
+permalink: vscode-install-python-1-2.html
 title: 【Python 1-2】Visual Studio Code(VSCode) 配置 Python开发环境
 tags:
   - Python

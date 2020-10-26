@@ -1,4 +1,5 @@
 ---
+permalink: python-run-helloword-1-3.html
 title: 【Python 1-3】Python的第一个程序 Hello World
 tags:
   - Python

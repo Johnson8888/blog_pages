@@ -1,4 +1,5 @@
 ---
+permalink: windows-install-python-1-1.html
 title: 【Python 1-1】Windows 10 安装Python3环境
 date: 2020-10-04 21:56:14
 categories: Python

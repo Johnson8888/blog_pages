@@ -1,4 +1,5 @@
 ---
+permalink: reason-learn-python-1-0.html
 title: 【Python 1-0】10个学习Python的理由以及Python的优势有哪些？
 categories: Python
 keywords: Windows Python

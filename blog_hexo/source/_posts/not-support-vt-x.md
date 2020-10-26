@@ -1,4 +1,5 @@
 ---
+permalink: not-support-vt-x.html
 title: 【Flutter 1-3】在VMWare Android Studio 安装模拟器报错 Your CPU does not support VT-x
 date: 2020-10-08 22:04:04
 toc: true

@@ -1,4 +1,5 @@
 ---
+permalink: how-to-set-up-hexo-blog.html
 title: Mac下使用GitHub+Hexo搭建个人博客
 date: 2020-09-26 14:09:54
 cover: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/page_conver_hexo.png

@@ -1,4 +1,5 @@
 ---
+permalink: windows-install-flutter.html
 title: 【Flutter 1-2】在 Windows 10下配置Flutter开发环境
 date: 2020-09-28 22:30:08
 cover: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/flutter-cover.jpg

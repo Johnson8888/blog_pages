@@ -1,13 +1,13 @@
-title: 弗拉德
-subtitle: ''
-description: 'iOS Flutter Python 技术博客'
-keywords: null
+title: 弗拉德的技术博客
+subtitle: 'iOS Flutter Python 技术博客'
+description: '弗拉德技术博客——一生只有一个职业:学生'
+keywords: 'Python自学,Flutter自学,iOS学习,大学生学Python,大学生学Flutter'
 author: 弗拉德
 language: zh-CN
 timezone: ''
 url: 'https://fulade.me'
 root: /
-permalink: ':year/:month/:day/:title/'
+permalink: title.html
 permalink_defaults: null
 pretty_urls:
   trailing_index: true

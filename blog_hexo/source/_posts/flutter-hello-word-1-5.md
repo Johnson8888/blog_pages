@@ -1,6 +1,5 @@
 ---
 permalink: flutter-hello-word-1-5.html
-# http://localhost:4000/2020/10/25/flutter-hello-word-1-5/
 title: 【Flutter 1-5】运行Flutter的第一个项目——计数器
 tags:
   - Flutter
@@ -12,6 +11,7 @@ thumbnail: >-
 categories: Flutter
 date: 2020-10-25 21:06:04
 ---
+
 
 
 ##### **创建项目**

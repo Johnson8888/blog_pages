@@ -89,13 +89,13 @@ footer:
     links:
         Creative Commons:
             icon: fab fa-creative-commons
-            url: 'https://creativecommons.org/'
-        Attribution 4.0 International:
-            icon: fab fa-creative-commons-by
-            url: 'https://creativecommons.org/licenses/by/4.0/'
+            url: 'https://blog.csdn.net/nsurl'
+        # Attribution 4.0 International:
+            # icon: fab fa-creative-commons-by
+            # url: 'https://creativecommons.org/licenses/by/4.0/'
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/ppoffice/hexo-theme-icarus'
+            url: 'https://github.com/Johnson8888'
 # Article related configurations
 article:
     # Code highlight settings
@@ -245,25 +245,27 @@ widgets:
 #            Flutter: 'https://hexo.io'
 #            Bulma: 'https://bulma.io'
     # Categories widget configurations
-    # -
-        # Where should the widget be placed, left sidebar or right sidebar
-        # position: left
-        # type: categories
-    # Recent posts widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: recent_posts
-    # Archives widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: archives
-    # Tags widget configurations
+        # Tags widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
         type: tags
+
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: categories
+    # Recent posts widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: recent_posts
+    # Archives widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: archives
+
     # Google FeedBurner email subscription widget configurations
     #-
         # Where should the widget be placed, left sidebar or right sidebar

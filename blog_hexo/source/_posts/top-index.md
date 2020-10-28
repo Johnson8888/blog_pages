@@ -34,3 +34,5 @@ tags:
 - 目前只有两个系列[Flutter](http://fulade.me/categories/Flutter/)和[Python](http://fulade.me/categories/Python/)
 - 如果大家有喜欢的教程尽管留言，我也会考虑更新。
 
+***
+![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

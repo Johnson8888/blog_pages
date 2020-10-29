@@ -34,7 +34,7 @@ v12.14.1
 ```
 检查[npm](https://www.npmjs.com/)是否安装成功，npm是node.js的包管理工具，用它来安装hexo
 ``` bash
-nmp -v
+npm -v
 ```
 输出结果:
 ``` bash

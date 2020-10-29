@@ -15,6 +15,7 @@
     "bulma-stylus": "^0.8.0",
     "hexo": "^5.0.0",
     "hexo-baidu-url-submit": "0.0.6",
+    "hexo-component-inferno": "^0.10.3",
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.9",

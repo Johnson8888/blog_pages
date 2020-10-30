@@ -76,5 +76,6 @@ theme: icarus
 
 deploy:
   type: 'git'
-  repo: git@github.com:Johnson8888/Johnson8888.github.io.git
+  # repo: git@github.com:Johnson8888/Johnson8888.github.io.git
+  repo: https://github.com/Johnson8888/Johnson8888.github.io.git
   branch: master

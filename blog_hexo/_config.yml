@@ -7,7 +7,7 @@ language: zh-CN
 timezone: ''
 url: 'https://fulade.me'
 root: /
-permalink: title.html
+permalink: :title.html
 permalink_defaults: null
 pretty_urls:
   trailing_index: true

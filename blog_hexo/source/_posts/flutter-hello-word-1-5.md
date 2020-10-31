@@ -13,12 +13,11 @@ date: 2020-10-25 21:06:04
 ---
 
 
-
-##### **创建项目**
+#### **创建项目**
 创建Flutter项目有很多种方法，各个IDE工具也都集成了创建Flutter项目的快捷操作。我们这里列举三种方式：使用命令行创建、使用Android Studio创建和使用VSCode创建。
 <!--more-->
 
-
+> 文末附有视频教程
 - 使用命令行创建
 在Flutter安装完之后，我们就已经配置好了命令行工具，命令行工具很强大，可以满足我们日常开发Flutter的所有操作（如果你还没有安装好Flutter环境，可以参考[这里](http://fulade.me/2020/09/28/windows-install-flutter/)来安装）。
 我们只需要打开命令行工具 输入:
@@ -46,3 +45,10 @@ date: 2020-10-25 21:06:04
 然后点击右上角运行按钮就可以了。
 ![2020_10_25_vscode_run](https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/2020_10_25_vscode_run.png)
 
+#####  **视频教程**
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=245172764&bvid=BV1wv411r7Po&cid=251359013&page=1"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe>
+</div>
+
+***  
+![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

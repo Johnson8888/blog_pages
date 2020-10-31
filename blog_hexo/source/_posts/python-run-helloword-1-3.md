@@ -27,6 +27,7 @@ date: 2020-10-20 22:15:45
 print("hello world!")
 ```
 然后使用快捷键`Ctrl+S`保存文件到`桌面`，文件名我们就命名为`hello_world.py`这样我们的Hello World程序就写完了！是不是很简单！
+
 ##### **使用 VSCode运行 hello_world.py**
 然后点击右上角的`绿色三角按钮`运行，看到有控制台输出`hello world!`，我们的程序运行成功了！
 ![2020_10_17_vscode_run](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_10_17_vscode_run.png)
@@ -42,6 +43,8 @@ print("hello world!")
 
 #####  **视频教程**
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
-    <iframe src="//player.bilibili.com/player.html?aid=800034187&bvid=BV1My4y187ov&cid=247600869&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+    <iframe src="//player.bilibili.com/player.html?aid=800034187&bvid=BV1My4y187ov&cid=247600869&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe>
 </div>
 
+***
+![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

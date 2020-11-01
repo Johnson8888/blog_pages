@@ -35,7 +35,7 @@ Hello Python World!
 ```
 <!--more-->
 运行文件hello_world.py时，末尾的.py指出这是一个Python程序，因此编辑器将使用Python解释器来运行它。
-Python解释器读取整个程序，确定其中每个单词的含义。例如，看到单词print时，解释器就会将括号中的内容打印到屏幕，而不会管括号中的内容是什么。
+Python解释器读取整个程序，确定其中每个单词的含义。例如，看到单词`print`时，解释器就会将括号中的内容打印到屏幕，而不会管括号中的内容是什么。
 编写程序时，编辑器会以各种方式突出程序的不同部分。例如，它知道print是一个函数的名称，因此将其显示为蓝色；它知道"Hello Python world!"不是Python代码，因此将其显示为另一种颜色。这种功能称为`语法突出`。
 
 ##### **变量**
@@ -52,7 +52,7 @@ print(message)
 
 下面来进一步扩展这个程序：修改hello_world.py，使其再打印一条消息。为此，在
 `hello_world.py`中添加一个空行，再添加下面两行代码：
-``` python
+``` Python
 message = "Hello Python world!" 
 print(message)
 message = "Hello Python Crash Course world!" 
@@ -77,8 +77,18 @@ Hello Python Crash Course world!
 
 - 变量名应既简短又具有描述性。例如，name比n好，student_name比s_n好，name_length
 比length_of_persons_name好。
-- 慎用小写字母l和大写字母O，因为它们可能被人错看成数字1和0。
+- 慎用小写字母l和大写字母O，因为它们可能被人错看成数字1和0。    
+
 要创建良好的变量名，需要经过一定的实践，在程序复杂而有趣时尤其如此。随着我们写的代码越来越多，并开始阅读别人编写的代码，将越来越善于创建有意义的变量名。
+
+
+>小作业
+请完成下面的练习，在做每个练习时，都编写一个独立的程序。保存每个程序时，使用符合标准 Python 约定的文件名：使用小写字母和下划线，如 simple_message.py 和simple_messages.py。
+1-1 简单消息：将一条消息存储到变量中，再将其打印出来。
+1-2 多条简单消息：将一条消息存储到变量中，将其打印出来；再将变量的值修改
+为一条新消息，并将其打印出来。
+
+想查看作业答案可以去[我的Githu仓库](https://github.com/Johnson8888/learn_python)
 
 ***
 ![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

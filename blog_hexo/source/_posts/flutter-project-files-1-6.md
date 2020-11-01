@@ -22,7 +22,7 @@ tags:
 | 文件或目录 | 说明 |
 | ------ | ------ |
 | .dart_tool | 记录了一些dart工具库所在的位置和信息 |
-.idea | android studio 是基于idea开发的，.idea 记录了项目的一些文件的变更记录 |
+|.idea | android studio 是基于idea开发的，.idea 记录了项目的一些文件的变更记录 |
 | android | Android项目文件夹 |
 | ios | iOS项目文件夹 |
 | lib | lib文件夹内存放我们的dart语音代码 |

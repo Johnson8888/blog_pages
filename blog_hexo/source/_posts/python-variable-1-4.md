@@ -1,5 +1,5 @@
 ---
-title: 【Python 1-5】Python教程之——变量
+title: 【Python 1-4】Python教程之——变量
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'

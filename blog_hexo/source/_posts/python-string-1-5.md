@@ -35,6 +35,7 @@ type:
 "The language 'Python' is named after Monty Python, not the snake." 
 "One of Python's strengths is its diverse and supportive community."
 ```
+<!--more-->
 #### **使用方法修改字符串的大小写**
 对于字符串，可执行的最简单的操作之一是修改其中的单词的大小写。
 请看下面的代码，并尝试判断其作用:

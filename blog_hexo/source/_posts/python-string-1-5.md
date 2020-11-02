@@ -1,5 +1,5 @@
 ---
-title: python-string-1-5
+title: 【Python 1-5】Python教程之——字符串
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'
@@ -8,7 +8,6 @@ authorDesc: 技术改变生活
 toc: true
 comments: true
 date: 2020-11-02 09:08:51
-authorDesc: 技术改变生活
 cover: >-
   https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_python.jpg
 thumbnail: >-

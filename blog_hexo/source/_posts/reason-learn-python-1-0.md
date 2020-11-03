@@ -97,7 +97,7 @@ Python还可以处理大量数据表格、矩阵计算以及数据统计，也�
 
 
 ##### **1.Python知名度高且容易拿到高薪**
-我们随便在招聘平台搜索一下北京的招聘信息，可以看到薪水还是很不错i的。
+我们随便在招聘平台搜索一下北京的招聘信息，可以看到薪水还是很不错的。
 ![2020_10_10_python_salary](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_10_10_python_salary.png)
 
 这是[Tiobe](https://baike.baidu.com/item/TIOBE)2020年发布的计算机语言排名。Python排在第三名。

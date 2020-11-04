@@ -23,7 +23,7 @@ type:
 ---
 > 变量来源于《数学》
 是计算机语言中能储存计算结果或能表示值的抽象概念。
-
+[文章首发地址](http://fulade.me/python-variable-1-4.html)
 ##### **运行hello_world.py时发生了什么**
 运行hello_world.py时，Python都做了些什么呢?下面来深入研究一下。实际上，即便是运行简单的程序，Python所做的工作也相当多:
 ```Python

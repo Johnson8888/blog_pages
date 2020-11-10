@@ -24,13 +24,13 @@ type:
 <!--more-->
 [文章首发地址](http://fulade.me/dart-variable-1-7.html)
 #### **类型安全的语言**
-Dart 是代码类型安全的语言，但是由于其支持类型推断，因此大多数变量不需要显式地指定类型：
+Dart 语言是类型安全的语言，但是由于其支持类型推断，因此大多数变量不需要显式地指定类型：
 例如
 ``` Dart
 /// 初始化一个字符串
-var name = '旅行者一号';
+var name = 'Fulade';
 /// Int类型
-var year = 1977;
+var year = 1987;
 /// 浮点数类型
 var antennaDiameter = 3.7;
 /// 数组
@@ -46,7 +46,8 @@ var image = {
 ``` Dart
 var name = 'Fulade';
 ```
-变量仅存储对象的引用。这里名为 name 的变量存储了一个 `String` 类型对象的引用，`'Fulade'` 则是该对象的值。
+**变量仅存储对象的引用。**
+这里名为 name 的变量存储了一个 `String` 类型对象的引用，`'Fulade'` 则是该对象的值。
 `name` 变量的类型被推断为 `String`，但是你可以为其指定类型。
 如果一个对象的引用不局限于单一的类型，可以将其指定为 `Object` 或 `dynamic` 类型。
 ``` Dart
@@ -57,7 +58,7 @@ dynamic name = 'Bob';
 String name = 'Bob';
 ```
 #### **默认值**
-在 Dart 中，未初始化的变量拥有一个默认的初始化值：null。即便数字也是如此，因为在 Dart 中一切皆为对象，数字也不例外。
+在 Dart 中，未初始化的变量拥有一个默认的初始化值：`null`。即便数字也是如此，因为在 Dart 中一切皆为对象，数字也不例外。
 ``` Dart 
 int lineCount;
 if(lineCount == null) {

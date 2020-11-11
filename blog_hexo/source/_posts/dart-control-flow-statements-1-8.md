@@ -31,27 +31,27 @@ Dart语言的控制语句跟其他常见语言的控制语句是一样的，基�
 <!--more-->
 [文章首发地址](http://fulade.me/dart-control-flow-statements-1-8.html)
 ##### **If 和 Else**
-Dart 支持 if - else 语句，其中 else 是可选的，比如下面的例子。
+Dart 支持 `if - else` 语句，其中 `else` 是可选的，比如下面的例子。
 ```Dart 
-if (isRaining()) {
-  you.bringRainCoat();
-} else if (isSnowing()) {
-  you.wearJacket();
+int i = 0
+if (i == 0) {
+  print("value 0");
+} else if (i == 1) {
+  print("value 1");
 } else {
-  car.putTopDown();
+  print("other value");
 }
 ```
-与 JavaScript 不同的是，Dart 的 if 语句中的条件必须是一个布尔值，不能是其它类型。
+与 `JavaScript` 不同的是，Dart 的 `if` 语句中的条件必须是一个布尔值，不能是其它类型。
 ##### **For循环**
-For 循环
-你可以使用标准的 for 循环进行迭代。例如：
+你可以使用标准的 `for` 循环进行遍历。例如：
 ``` Dart
 var message = StringBuffer('Dart is fun');
 for (var i = 0; i < 5; i++) {
   message.write('!');
 }
 ```
-在 Dart 语言中，for 循环中的闭包会自动捕获循环的 索引值 以避免 JavaScript 中一些常见的陷阱。假设有如下代码：
+在 Dart 语言中，`for` 循环中的闭包会自动捕获循环的 索引值 以避免 `JavaScript` 中一些常见的陷阱。假设有如下代码：
 ``` Dart
 var callbacks = [];
 for (var i = 0; i < 2; i++) {
@@ -59,13 +59,13 @@ for (var i = 0; i < 2; i++) {
 }
 callbacks.forEach((c) => c());
 ```
-上述代码执行后会输出 0 和 1，但是如果在 JavaScript 中执行同样的代码则会输出两个 2。
+上述代码执行后会输出 `0` 和 `1`，但是如果在 `JavaScript` 中执行同样的代码则会输出两个 2。
 
-如果要遍历的对象实现了 Iterable 接口，则可以使用 forEach() 方法，如果不需要使用到索引，则使用 forEach 方法是一个非常好的选择：
+如果要遍历的对象实现了 `Iterable` 接口，则可以使用 `forEach()` 方法，如果不需要使用到索引，则使用 `forEach` 方法是一个非常好的选择：
 ``` Dart
 candidates.forEach((candidate) => candidate.interview());
 ```
-像 List 和 Set 等实现了 Iterable 接口的类还支持 for-in 形式的 迭代：
+像 `List` 和 `Set` 等。实现了 `Iterable` 接口的类还支持 `for-in` 形式的 迭代：
 ``` Dart 
 var collection = [1, 2, 3];
 for (var x in collection) {
@@ -80,7 +80,7 @@ while (!isDone()) {
   doSomething();
 }
 ```
-do-while 循环则会先执行一遍循环体 再 判断条件：
+`do-while` 循环则会先执行一遍循环体 再 判断条件：
 ``` Dart
 do {
   printLine();
@@ -106,14 +106,14 @@ for (int i = 0; i < candidates.length; i++) {
   candidate.interview();
 }
 ```
-上述代码中的 candidates 如果像 `List` 或 `Set` 一样实现了 `Iterable` 接口则可以简单地使用下述写法：
+上述代码中的 `candidates` 如果像 `List` 或 `Set` 一样实现了 `Iterable` 接口则可以简单地使用下述写法：
 ``` Dart:
 candidates
     .where((c) => c.yearsExperience >= 5)
     .forEach((c) => c.interview());
 ```
 ##### **Switch 和 Case**
-Switch 语句在 Dart 中使用 == 来比较整数、字符串或编译时常量，比较的两个对象必须是同一个类型且不能是子类并且没有重写 == 操作符。 枚举类型非常适合在 Switch 语句中使用。
+Switch 语句在 Dart 中使用 `==` 来比较整数、字符串或编译时常量，比较的两个对象必须是同一个类型且不能是子类并且没有重写 `==` 操作符。 枚举类型非常适合在 Switch 语句中使用。
 
 每一个非空的 `case` 子句都必须有一个 `break` 语句，也可以通过 `continue、throw` 或者 `return` 来结束非空 `case` 语句。
 当没有 `case` 语句匹配时，可以使用 `default` 子句来匹配这种情况：
@@ -163,7 +163,7 @@ switch (command) {
     break;
 }
 ```
-在非空 `case` 语句中想要实现 `fall-through` 的形式，可以使用 `continue` 语句配合 lable 的方式实现:
+在非空 `case` 语句中想要实现 `fall-through` 的形式，可以使用 `continue` 语句配合 `lable` 的方式实现:
 ``` Dart
 var command = 'CLOSED';
 switch (command) {
@@ -203,9 +203,9 @@ assert(urlString.startsWith('https'),
 
 - Flutter 在调试模式时生效。
 
-- 一些开发工具比如 dartdevc 通常情况下是默认生效的。
+- 一些开发工具比如 `dartdevc` 通常情况下是默认生效的。
 
-- 其他一些工具，比如 dart 以及 dart2js 通过在运行 Dart 程序时添加命令行参数 --enable-asserts 使 assert 生效。
+- 其他一些工具，比如 `dart` 以及 `dart2js` 通过在运行 `Dart` 程序时添加命令行参数 `--enable-asserts` 使 `assert` 生效。
 
 在生产环境代码中，断言会被忽略，与此同时传入 `assert` 的参数不被判断。
 

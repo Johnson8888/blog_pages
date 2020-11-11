@@ -47,3 +47,6 @@ tags:
 - test
 这里存放了我们在项目开发过程中的测试代码，良好的测试习惯是保证代码质量的必要手段，希望大家在`test`文件里写更多的代码！
 
+
+***  
+![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

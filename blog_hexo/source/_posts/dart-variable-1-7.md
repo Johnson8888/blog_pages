@@ -30,11 +30,11 @@ Dart 语言是类型安全的语言，但是由于其支持类型推断，因此
 /// 初始化一个字符串
 var name = 'Fulade';
 /// Int类型
-var year = 1987;
+var year = 1995;
 /// 浮点数类型
 var antennaDiameter = 3.7;
 /// 数组
-var flybyObjects = ['木星', '土星', '天王星', '海王星'];
+var list = ['Java', 'Python', 'C++', 'C'];
 /// 字典类型
 var image = {
   'tags': ['土星'],
@@ -76,12 +76,12 @@ final String nickname = 'Bobby';
 ``` Dart
 name = 'Alice'; // Error: a final variable can only be set once.
 ```
-使用关键字 `const` 修饰变量表示该变量为 **编译时常量**。如果使用 `const` 修饰类中的变量，则必须加上 `static` 关键字，即 `static const`（注意：顺序不能颠倒）。在声明 `const` 变量时可以直接为其赋值，也可以使用其它的 `const` 变量为其赋值：
+使用关键字 `const` 修饰变量表示该变量为 **编译时常量**。如果使用 `const` 修饰类中的变量，则必须加上 `static` 关键字，即 `static const`（注意：顺序不能颠倒。在声明 `const` 变量时可以直接为其赋值，也可以使用其它的 `const` 变量为其赋值：
 ```Dart
 const bar = 1000000; // 直接赋值 [Unit of pressure (dynes/cm2)]
 const double atm = 1.01325 * bar; // 利用其它 const 变量赋值 (Standard atmosphere)
 ```
-`const` 关键字不仅仅可以用来定义常量，还可以用来创建 常量值，该常量值可以赋予给任何变量。你也可以将构造函数声明为 `const` 的，这种类型的构造函数创建的对象是不可改变的。
+`const` 关键字不仅仅可以用来定义常量，还可以用来创建常量值，该常量值可以赋予给任何变量。你也可以将构造函数声明为 `const` 的，这种类型的构造函数创建的对象是不可改变的。
 ``` Dart 
 var foo = const [];
 final bar = const [];

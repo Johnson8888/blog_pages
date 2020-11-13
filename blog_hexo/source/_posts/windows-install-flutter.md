@@ -106,3 +106,6 @@ tags:
 需要我们手动安装`Android SDK Platform-Tools`
 打开Android Studio 点击`File`->`Settings`->`Android SDK`找到`Android SDK Platform-Tools`安装即可！
 ![2020_10_07_error_platform_tools](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_10_07_error_platform_tools.png)
+
+***
+![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

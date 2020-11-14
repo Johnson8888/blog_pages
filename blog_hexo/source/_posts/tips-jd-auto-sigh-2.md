@@ -19,13 +19,14 @@ photos:
 fileName:
 type:
 ---
-
->双十一已经过去了，相信很多小伙伴也都剁手了。同样电商平台也是给出了很多优惠。有些优惠，比如红包，是靠运气来获得的，但是还有一些优惠是靠长期坚持才能获得。比如：签到、东东萌宠。每天都能坚持签到固然很棒，但是如果可以有脚本自动签到，那岂不是更美？
+作者 | 弗拉德
+来源 | 弗拉德（公众号：fulade_me)
+[文章首发地址](http://fulade.me/tips-jd-auto-sigh-2.html)
+>双十一刚刚过，相信很多小伙伴也都剁手了。今年电商平台同样给出了很多优惠。有些优惠，比如红包，是靠运气来获得的，但是还有一些优惠是靠长期坚持才能获得。比如：签到、东东萌宠。每天都能坚持签到固然很棒，但是如果有脚本可以自动签到，那岂不是更美？
 <!--more-->
 [自动签到脚本](https://github.com/Johnson8888/jd_sign_bot)此脚本涵盖了目前京90%以上的签到任务，我们只需要简单配置，每天定时触发，就可以签到，领奖品了。而且都是**免费的**。
 ##### 运行环境
 - node.js
-- 腾讯云·云函数(腾讯云每个月免费有100w调用次数和40万GBs资源使用量，跑一个自动签到脚本，足足够用。而且部署在云服务器上，运行有保障，运行速度也有保障)
 - Server酱(可选)
 
 ##### 获取京东Cookie
@@ -53,8 +54,7 @@ var CookieValue = CV.match(/pt_pin=.+?;/) + CV.match(/pt_key=.+?;/);
 copy(CookieValue);
 ```
 这样子整理出关键的的cookie已经在你的剪贴板上，可直接粘贴。
-
-这样我们的cookies就取出来了，我们先把它保存好。下面的步骤要用到。
+我们先把它保存好，下面的步骤要用到。
 
 ##### 配置 Server酱
 [Server酱](http://sc.ftqq.com/3.version)是一个免费的，可以推送消息到我们微信的服务。
@@ -66,16 +66,15 @@ copy(CookieValue);
 输入账号密码即可。
 - 登录成功后点击`微信推送`并扫描二维码绑定微信
 ![2020_11_13_server_jiang_wechat](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_13_server_jiang_wechat.jpg)
-使用手机打开微信，扫描屏幕上的二维码，如果未关注，先关注，然后在绑定即可。
+使用手机打开微信，扫描屏幕上的二维码，如果未关注，先关注，然后再绑定即可。
 ![2020_11_13_server_jiang_qrcode](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_13_server_jiang_qrcode.jpg)
 - 绑定成功后，点击右上方的`发送消息`链接，就可以看到你自己的 `key`值，保存下来，后面会用到。
 ![2020_11_13_server_jiang_test](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_13_server_jiang_test.jpg)
 当然你也可以在下面的`在线发送工具`测试推送是否生效。
 
 ##### 配置本地代码
-
 - 使用`git clone`命令将[https://github.com/Johnson8888/jd_sign_bot](https://github.com/Johnson8888/jd_sign_bot)代码下载下来。
-- 下载完成后，使用命令行工具(Mac下使用`Termainal`,Windows下使用`PowerShell`)进入到`jd_sign_bot`文件内。在命令行内输入 `npm install --dependencies`，等待运行完成。
+- 下载完成后，我们需要安装项目所需要的依赖。使用命令行工具(Mac下使用`Termainal`,Windows下使用`PowerShell`)进入到`jd_sign_bot`文件内。在命令行内输入 `npm install --dependencies`，等待运行完成。
 ![2020_11_13_npm_install](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_13_npm_install.png)
 此时，项目文件夹内会多出一个 `node_modules`文件夹。
 
@@ -87,8 +86,15 @@ copy(CookieValue);
 打开文件内的`app.js`文件，修改`serverJ`参数为刚刚获取到的Server酱的key
 ![2020_11_13_input_cookies](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_13_input_cookies.png)
 
+##### 执行签到
+进入到`jd_sign_hot`文件夹下，执行 `node app.js`即可签到！
+![2020_11_13_auto_sign_exec](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_13_auto_sign_exec.jpg)
+此时我们的脚本在本地就已经部署好了，如果你想更编辑，可以把代码部署到云服务器上，这样就不需要每天点击触发了。
+或者你也可以部署在自己的服务器上，每天定时执行。
 
-##### 配置通讯云 云函数
+
+
+#### 你也可以 将脚本部署在腾讯云 · 云函数 上
 去到[腾讯云函数地址](https://console.cloud.tencent.com/scf/index)，如果没有开通此服务的顺手开一下就可以了。
 - 单击左侧导航栏函数服务，进入**函数服务**页面。 在页面上方选择一个地域，最好选择离你常用地区近点的，不至于导致账号异常。单击**新建**。如下图所示：
 ![2020_11_13_tengxun_clound](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_13_tengxun_clound.jpg)
@@ -110,7 +116,7 @@ copy(CookieValue);
 
 ![2020_11_13_tengxunyun_input_3](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_13_tengxunyun_input_3.png)
 
-点击如图所示
+点击`创建触发器`
 
 ![2020_11_13_tengxunyun_input_4](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_13_tengxunyun_input_4.png)
 
@@ -124,6 +130,8 @@ copy(CookieValue);
 如果没有收到推送，可以点击`日志查看`排查问题。
 ![2020_11_13_tengxun_cloud_test](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_13_tengxun_cloud_test.png)
 
+如果你不喜欢腾讯云的服务
+我们可以参考[ruicky大神的博客](https://ruicky.me/2020/06/05/jd-sign/)，将脚本部署在Github Actions上面也是也可以的。
 
 ***  
 ![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

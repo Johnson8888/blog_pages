@@ -8,10 +8,10 @@ authorDesc: 技术改变生活
 toc: true
 comments: true
 date: 2020-11-09 19:58:16
-cover: https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/page_conver_control_flow_statements.jpg
-thumbnail: https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/page_conver_control_flow_statements.jpg
+cover: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_functions.jpeg
+thumbnail: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_functions.jpeg
 categories: Flutter
-keywords: dar语言，dart语言变量，flutterdart语言，dart语言基础
+keywords: Flutter函数，Flutter函数变量，dart函数，dart方法，dart匿名函数
 tags:
   - Flutter
 description:

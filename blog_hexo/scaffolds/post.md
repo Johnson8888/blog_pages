@@ -12,6 +12,7 @@ toc: true
 comments: true
 tags: 
 keywords: 
+categories: 
 description: 
 photos: 
 fileName: 

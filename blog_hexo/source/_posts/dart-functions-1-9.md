@@ -8,16 +8,17 @@ authorDesc: 技术改变生活
 toc: true
 comments: true
 date: 2020-11-08 22:28:10
-cover:
-thumbnail:
-tags:
-keywords:
+cover: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_functions.jpeg
+thumbnail: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_functions.jpeg
+tags: 
+    - Flutter
+categories: Flutter
+keywords: Flutter函数，Flutter函数变量，dart函数，dart方法
 description:
 photos:
 fileName:
 type:
 ---
-
 
 #### **函数**
 >Dart 是一种真正面向对象的语言，所以即便函数也是对象并且类型为 `Function`，这意味着函数可以被赋值给变量或者作为其它函数的参数。你也可以像调用函数一样调用 `Dart` 类的实例。

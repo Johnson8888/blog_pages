@@ -1,5 +1,5 @@
 ---
-title: 你还在手动签到吗？快来试试这个脚本吧！
+title: 是时候来薅京东的羊毛了，自动化签到脚本！
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'
@@ -11,6 +11,8 @@ date: 2020-11-13 17:14:49
 cover: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_jd_sigh.png
 thumbnail: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_jd_sigh.png
 tags: 
+    - Tips
+categories: Tips
 keywords: 京东自动签到，签到脚本，京东双11，京东618
 description:
 photos:
@@ -18,22 +20,21 @@ fileName:
 type:
 ---
 
->双十一已经过去了，相信很多小伙伴也都已经剁手了。电商平台也是给出了很多优惠。有些优惠，比如红包，是靠运气来获得的，但是还有一些优惠是靠长期坚持才能获得。比如说：签到、东东萌宠。每天都能坚持签到固然很棒，但是如果可以有脚本自动签到，那岂不是更美？
+>双十一已经过去了，相信很多小伙伴也都剁手了。同样电商平台也是给出了很多优惠。有些优惠，比如红包，是靠运气来获得的，但是还有一些优惠是靠长期坚持才能获得。比如：签到、东东萌宠。每天都能坚持签到固然很棒，但是如果可以有脚本自动签到，那岂不是更美？
 <!--more-->
-[自动签到脚本](https://github.com/Johnson8888/jd_sign_bot)此脚本涵盖了目前京90%以上的签到任务，我们只需要简单配置，每天定时出发，就可以签到，领奖品了。而且都是**免费的**。
+[自动签到脚本](https://github.com/Johnson8888/jd_sign_bot)此脚本涵盖了目前京90%以上的签到任务，我们只需要简单配置，每天定时触发，就可以签到，领奖品了。而且都是**免费的**。
 ##### 运行环境
 - node.js
-- 腾讯云 云函数
+- 腾讯云·云函数(腾讯云每个月免费有100w调用次数和40万GBs资源使用量，跑一个自动签到脚本，足足够用。而且部署在云服务器上，运行有保障，运行速度也有保障)
 - Server酱(可选)
-腾讯云每个月给 100w调用次数和40万GBs资源使用量，跑一个自动签到脚本，足足够用。而且部署在云服务器上，运行有保障。
 
 ##### 获取京东Cookie
-这里已`Chrome`浏览器为例，`Edge`、`360浏览器`、`QQ浏览器`同样支持。
+这里以`Chrome`浏览器为例，`Edge`、`360浏览器`、`QQ浏览器`同样支持。
 - 打开Chrome浏览的隐私模式，输入[https://m.jd.com/](https://m.jd.com/)。
-- 按下键盘上的`F12`打开调试模式，选择手机模式。
+- 按下键盘上的`F12`进入调试模式，选择手机模式。
 ![2020_11_13_auto_sign_device](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_13_auto_sign_device.jpg)
-如果没有登录就使用`手机验证码`的方式登录(已登录，可忽略)，使用验证码登录cookie有效时长30天左右，存活时间长。
-- 登录后，点击`Network`
+如果没有登录就使用`手机验证码`方式登录(已登录，可忽略)，使用验证码登录获取的`cookie`有效时长30天左右，存活时间更长。
+- 登录成功后，点击`Network`
 ![2020_11_13_auto_sign_network](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_13_auto_sign_network.png)
 
 然后点击箭头所指的这个按钮清理一下，因为网络请求太多了，不方便查看。
@@ -41,12 +42,19 @@ type:
 清理完了之后，点击一下`我的`。
 
 ![2020_11_13_auto_sign_gif](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_13_auto_sign_gif.png)
-这个时候我们找到一个`log.gif`开头的请求，点击它，这个时候可以看到`cookie`字段了。
+这个时候我们找到一个`log.gif?`开头的请求，点击它，就可以看到`cookie`字段了。
 ![2020_11_13_auto_sign_cookie](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_13_auto_sign_cookie.png)
 
-- 这样复制出来的cookie比较长，我们只需要`pt_pin=xxxx`;和 `pt_key=xxxx;`部分的内容即可(注:英文引号;是必要的)。可以用下面的脚本，在`Chrome`浏览器按F12，`console`里面输入下面脚本按`enter`回车键。这样子整理出关键的的cookie已经在你的剪贴板上，可直接粘贴。
+- 这样复制出来的cookie比较长，我们只需要`pt_pin=xxxx;`和 `pt_key=xxxx;`部分的内容即可(注:英文引号`;`是必要的)。
+可以用下面的脚本，直接在`console`里面输入下面脚本按`enter`回车键。
+``` js
+var CV = '单引号里面放上面拿到的cookie';
+var CookieValue = CV.match(/pt_pin=.+?;/) + CV.match(/pt_key=.+?;/);
+copy(CookieValue);
+```
+这样子整理出关键的的cookie已经在你的剪贴板上，可直接粘贴。
 
-这样我们的cookies就取出来了，我们先把它保存好。一会要用到
+这样我们的cookies就取出来了，我们先把它保存好。下面的步骤要用到。
 
 ##### 配置 Server酱
 [Server酱](http://sc.ftqq.com/3.version)是一个免费的，可以推送消息到我们微信的服务。

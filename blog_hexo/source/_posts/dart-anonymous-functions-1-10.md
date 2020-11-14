@@ -1,5 +1,5 @@
 ---
-title: dart-anonymous-functions-1-10
+title: Flutter教程Dart语言——匿名函数
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'
@@ -25,7 +25,7 @@ type:
 >大多数方法都是有名字的，比如 main() 或 printElement()。你可以创建一个没有名字的方法，称之为 匿名函数，或 Lambda表达式 或 Closure闭包。你可以将匿名方法赋值给一个变量然后使用它，比如将该变量添加到集合或从中删除。
 
 匿名方法看起来与命名方法类似，在括号之间可以定义参数，参数之间用逗号分割。
-
+<!--more-->
 后面大括号中的内容则为函数体：
 ```Dart
 ([[类型] 参数[, …]]) {

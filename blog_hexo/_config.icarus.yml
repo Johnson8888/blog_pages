@@ -299,7 +299,7 @@ plugins:
         tracking_id: df3bcf68f1b9d549ac02fcaead15e9dc
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
-    busuanzi: false
+    busuanzi: true
     # CNZZ statistics
     # https://www.umeng.com/web
     cnzz:

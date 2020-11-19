@@ -68,7 +68,11 @@ if(lineCount == null) {
 }
 ```
 ##### **Final 和 Const**
-如果你不想更改一个变量，可以使用关键字 `final` 或者 `const` 修饰变量，这两个关键字可以替代 `var` 关键字或者加在一个具体的类型前。一个 `final` 变量只可以被赋值一次；一个 `const` 变量是一个编译时常量（`const` 变量同时也是 `final`）。被`final`修饰的变量在第一次使用的时候被初始化。
+如果你不想更改一个变量，可以使用关键字 `final` 或者 `const` 修饰变量，这两个关键字可以替代 `var` 关键字。
+**需要注意的是：**
+`final` 变量只可以被赋值一次；
+`const` 变量是一个编译时常量。（`const` 变量同时也是 `final`）
+被`final`修饰的变量在第一次使用的时候被初始化。
 下面的示例中我们创建并设置两个 `final` 变量：
 ``` Dart
 final name = 'Bob'; // Without a type annotation
@@ -78,24 +82,11 @@ final String nickname = 'Bobby';
 ``` Dart
 name = 'Alice'; // Error: a final variable can only be set once.
 ```
-使用关键字 `const` 修饰变量表示该变量为 **编译时常量**。如果使用 `const` 修饰类中的变量，则必须加上 `static` 关键字，即 `static const`（注意：顺序不能颠倒。在声明 `const` 变量时可以直接为其赋值，也可以使用其它的 `const` 变量为其赋值：
+使用关键字 `const` 修饰变量表示该变量为 **编译时常量**。如果使用 `const` 修饰类中的变量，则必须加上 `static` 关键字，即 `static const`（注意：顺序不能颠倒）。在声明 `const` 变量时可以直接为其赋值，也可以使用其它的 `const` 变量为其赋值：
 ```Dart
-const bar = 1000000; // 直接赋值 [Unit of pressure (dynes/cm2)]
-const double atm = 1.01325 * bar; // 利用其它 const 变量赋值 (Standard atmosphere)
+const i = 10; // 直接赋值 [Unit of pressure (dynes/cm2)]
+const double j = 1.01325 * i; // 利用其它 const 变量赋值 
 ```
-`const` 关键字不仅仅可以用来定义常量，还可以用来创建常量值，该常量值可以赋予给任何变量。你也可以将构造函数声明为 `const` 的，这种类型的构造函数创建的对象是不可改变的。
-``` Dart 
-var foo = const [];
-final bar = const [];
-const baz = []; // 相当于 `const []` (Equivalent to `const []`)
-```
-如果使用初始化表达式为常量赋值可以省略掉关键字 `const`，比如上面的常量 `baz` 的赋值就省略掉了 `const`没有使用 `final` 或 `const` 修饰的变量的值是可以被更改的，即使这些变量之前引用过 `const` 的值。
-``` Dart
-foo = [1, 2, 3]; // foo 的值之前为 const [] (Was const [])
-```
-常量的值不可以被修改：
-``` Dart 
-baz = [42]; // 报错：常量不可以被赋值。(Error: Constant variables can't be assigned a value.)
-```
+本文所有代码都已上传到[Github](https://github.com/Johnson8888/learn_flutter)
 ***  
 ![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

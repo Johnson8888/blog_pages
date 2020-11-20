@@ -22,25 +22,25 @@ type:
 作者 | 弗拉德
 来源 | 弗拉德（公众号：fulade_me)
 #### **函数**
->Dart 是一种真正面向对象的语言，所以即便函数也是对象并且类型为 `Function`，这意味着函数可以被赋值给变量或者作为其它函数的参数。你也可以像调用函数一样调用 `Dart` 类的实例。
+>Dart 同样也是一种面向对象的语音。所以即便函数也是一个对象。类型为 `Function`，这意味着函数可做作为变量，也也可以作为函数的参数。
 <!--more-->
 下面是定义一个函数的例子：
 ```Dart
-bool isNoble(int atomicNumber) {
-  return _nobleGases[atomicNumber] != null;
+isEmpty(List aList) {
+  return aList.length == 0;
 }
 ```
-虽然高效 `Dart` 指南建议在公开的 API 上定义返回类型，不过即便不定义，该函数也依然有效：
+为了规范其实我们需要在函数的头部声明一下返回值类型，当然如果不声明也可以运行，
 ```Dart
-isNoble(atomicNumber) {
-  return _nobleGases[atomicNumber] != null;
+bool isEmpty(List aList) {
+  return aList.length == 0;
 }
 ```
 如果函数体内只包含一个表达式，你可以使用简写语法：
 ```Dart
-bool isNoble(int atomicNumber) => _nobleGases[atomicNumber] != null;
+bool isEmpty(List aList) => aList == 0;
 ```
-语法 `=>` 表达式 是 `{ return 表达式; }` 的简写， `=>` 有时也称之为胖箭头语法。
+ `=>` 表达的 是 `{ return 表达式; }` 的简写，有时`=>`也称之为**胖箭头语法**。
 
 
 
@@ -297,6 +297,6 @@ assert(foo() == null);
 ```
 
 本文所有代码都已上传到[Github](https://github.com/Johnson8888/learn_flutter)
-***  
+***
 ![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)
 

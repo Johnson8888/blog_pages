@@ -102,9 +102,9 @@ for (int i = 0; i < 10; i++) {
     print("i = " + i.toString());
   }
 ```
-上述代码中的 `candidates` 如果像 `List` 或 `Set` 一样实现了 `Iterable` 接口则可以简单地使用下述写法：
+由于 List实现了 Iterable 接口，则可以简单地使用下述写法：
 ``` Dart:
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].where((i) => i > 5).forEach((i) {
+[0,1, 2, 3, 4, 5, 6, 7, 8, 9].where((i) => i > 5).forEach((i) {
   print("i = " + i.toString());
 });
 ```
@@ -148,7 +148,7 @@ switch (command) {
 ```
 
 ##### **断言**
-在开发过程中，可以在条件表达式为 `false` 时使用 **- assert**， 来中断代码的执行，提示出错误。你可以在本文中找到大量使用 `assert` 的例子。下面是相关示例：
+在开发过程中，可以在条件表达式为 `false` 时使用 **assert**， 来中断代码的执行，提示出错误。你可以在本文中找到大量使用 `assert` 的例子。下面是相关示例：
 ``` Dart
 // 确保变量值不为 null (Make sure the variable has a non-null value)
 assert(text != null);

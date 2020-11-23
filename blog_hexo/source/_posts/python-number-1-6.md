@@ -13,6 +13,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver
 tags:
     - Python
 keywords: Python数字,Python自学教程,大学生学Python,Python教程
+categories: Python
 description:
 photos:
 fileName:

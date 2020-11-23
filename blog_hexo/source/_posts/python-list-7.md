@@ -211,8 +211,18 @@ print(fruits)
 ```
 注意，调用函数`sorted()`后，列表元素的排列顺序并没有变。如果你要按与字母顺 序相反的顺序显示列表，也可向函数`sorted()`传递参数`reverse=True`。
 在并非所有的值都是小写时，按字母顺序排列列表要复杂些，这个问题我们后面再详细解答。
-
-
+#### 倒序输出列表
+要反转列表元素的排列顺序，可使用方法`reverse()`。假设`fruist`列表是按购买时间排列的，可轻松地按相反的顺序排列其中的水果:
+``` Python
+fruits = ['pear','banana','apple']
+print(fruits)
+['pear', 'banana', 'apple']
+fruits.reverse()
+print(fruits)
+['apple', 'banana', 'pear']
+```
+`reverse()`不是指按与字母顺序相反的顺序排列列表元素，而**只是反转**列表元素的排列顺序。
+方法`reverse()`永久性地修改列表元素的排列顺序，但可随时恢复到原来的排列顺序，为此 只需对列表再次调用reverse()即可
 
 
 

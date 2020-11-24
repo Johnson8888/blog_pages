@@ -1,5 +1,5 @@
 ---
-title: 免费送书啦！细数Github上那些免费的书籍！
+title: 免费送书啦！细数Github大神们开源的书籍！
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'
@@ -8,29 +8,57 @@ authorDesc: 技术改变生活
 toc: true
 comments: true
 date: 2020-11-23 20:49:34
-cover:
-thumbnail:
+cover: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_freebook.png
+thumbnail: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_freebook.png
 tags:
-keywords:
-categories:
+    - Tips
+keywords: 免费送书，github书籍，freebook，github上免费书籍
+categories: Tips
 description:
 photos:
 fileName:
 type:
 ---
-- [《Java 编程思想》](https://github.com/apachecn/thinking-in-java-zh)
-![2020_11_23_book_1](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_1.jpg)
-《计算机科学丛书：Java编程思想（第4版）》赢得了全球程序员的广泛赞誉，即使是晦涩的概念，在BruceEckel的文字亲和力和小而直接的编程示例面前也会化解于无形。从Java的基础语法到高级特性（深入的面向对象概念、多线程、自动项目构建、单元测试和调试等），本书都能逐步指导你轻松掌握。
 
-　　Bruce Eckel，是MindView公司的总裁，该公司向客户提供软件咨询和培训。他是C++标准委员会拥有表决权的成员之一，拥有应用物理学学士和计算机工程硕士学位。除本书外，他还是《C++编程思想》的作者，并与人合著了《C++编程思想第2卷》。
-
-
-
+### Go 系列
 
 - [《Mastering GO》](https://github.com/hantmac/Mastering_Go_ZH_CN)
 本书适用于Golang程序员。您之前应该阅读有关Go的介绍性书籍。本书的内容包括但不限于并发、网络编程、垃圾回收、组合、GO UNIX系统编程、基本数据类型（Array,Slice,Map）、GO源码、反射，接口，类型方法等高级概念。阅读本书需要一定的编程经验。如果你在工作中使用Go或者业余时间爱好GO，那么这本书一定会让你对GO的理解更上一层楼。
 ![2020_11_23_book_2](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_2.jpeg)
 本书适用于Golang程序员。您之前应该阅读有关Go的介绍性书籍，或者已经完成了Go By Example。本书的内容包括但不限于并发、网络编程、垃圾回收、组合、GO UNIX系统编程、基本数据类型（Array,Slice,Map）、GO源码、反射，接口，类型方法等高级概念。阅读本书需要一定的编程经验。如果你在工作中使用Go或者业余时间爱好GO，那么这本书一定会让你对GO的理解更上一层楼。
+
+
+- [《Go语法树入门——开启自制编程语言和编译器之旅！》](https://github.com/chai2010/go-ast-book)
+Go语法树是Go语言源文件的另一种语义等价的表现形式。而Go语言自带的go fmt和go doc等命令都是在Go语法树的基础之上分析工具。因此将Go语言程序作为输入数据，让我们语法树这个维度重新审视Go语言程序，我们将得到创建Go语言本身的技术。Go语法树由标准库的go/ast包定义，它是在go/token包定义的词法基础只是抽象的语法树结构。本书简单介绍语法树相关包的使用（出版社已经约稿出版本书，并在开源版本的基础之上增加了语义信息、SSA形式、LLVM和凹语言等内容，因为出版社版权问题不方便全部公开新增内容）。
+![2020_11_23_book_6](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_6.png)
+
+
+-[《Go语言101》](https://github.com/golang101/golang101)
+Go语言101是一本侧重于Go语言语法语义以及运行时相关知识点的编程解释和指导书。 此书旨在尽可能地帮助Go程序员更深更全面地理解Go语言。 此书也搜集了Go语言和Go编程中的很多细节。 此书同时适合Go初学者和有一定经验的Go程序员阅读。
+
+### C 和 C++
+
+- [《C/C++面向WebAssembly编程》](https://github.com/3dgen/cppwasm-book)
+适读人群 ：本书适合从事高性能Web前端开发、跨语言Web应用开发的技术人员学习参考，也可以作为WebAssembly标准参考手册随时查阅。
+作为一种新颖的网页前端技术，WebAssembly的发展日新月异。本书基于已受浏览器普遍支持的WebAssembly极小可用特征集，致力于通过简单易懂的方式，从使用方法到虚拟机设计，讲解WebAssembly的运行原理。极小可用特征集只是快速迭代的起点，SIMD、多线程等更多特性将逐渐被添加到WebAssembly标准中。
+![2020_11_23_book_15](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_15.png)
+
+
+
+- [《C++ Concurrency in Action》](https://github.com/xiaoweiChen/Cpp_Concurrency_In_Action)
+作为对《C++ Concurrency in Action》的中文翻译。本书是基于C++11新标准的并发和多线程编程深度指南。从std::thread、std::mutex、std::future和std::async等基础类的使用，到内存模型和原子操作、基于锁和无锁数据结构的构建，再扩展到并行算法、线程管理，最后还介绍了多线程代码的测试工作。本书的附录部分还对C++11新语言特性中与多线程相关的项目进行了简要的介绍，并提供了C++11线程库的完整参考。本书适合于需要深入了解C++多线程开发的读者，以及使用C++进行各类软件开发的开发人员、测试人员。对于使用第三方线程库的读者，也可以从本书后面的章节中了解到相关的指引和技巧。同时，本书还可以作为C++11线程库的参考工具书。
+![2020_11_23_book_16](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_16.png)
+
+
+
+
+- [《Java 编程思想》](https://github.com/apachecn/thinking-in-java-zh)
+![2020_11_23_book_1](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_1.jpg)
+《计算机科学丛书：Java编程思想（第4版）》赢得了全球程序员的广泛赞誉，即使是晦涩的概念，在BruceEckel的文字亲和力和小而直接的编程示例面前也会化解于无形。从Java的基础语法到高级特性（深入的面向对象概念、多线程、自动项目构建、单元测试和调试等），本书都能逐步指导你轻松掌握。Bruce Eckel，是MindView公司的总裁，该公司向客户提供软件咨询和培训。他是C++标准委员会拥有表决权的成员之一，拥有应用物理学学士和计算机工程硕士学位。除本书外，他还是《C++编程思想》的作者，并与人合著了《C++编程思想第2卷》。
+
+
+
+
 
 - [《软件设计的哲学》](https://github.com/gdut-yy/A-Philosophy-of-Software-Design-zh)
 ![2020_11_23_book_3](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_3.jpeg)
@@ -48,10 +76,6 @@ type:
 该书教你用 C 语言实现自己的 Lisp 语言。用 1000 多行实现一个小但功能齐全的 Lisp 语言，这里有份中文翻译版本，但是没有翻译完
 ![2020_11_23_book_5](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_5.png)
 
-
-- [《Go语法树入门——开启自制编程语言和编译器之旅！》](https://github.com/chai2010/go-ast-book)
-Go语法树是Go语言源文件的另一种语义等价的表现形式。而Go语言自带的go fmt和go doc等命令都是在Go语法树的基础之上分析工具。因此将Go语言程序作为输入数据，让我们语法树这个维度重新审视Go语言程序，我们将得到创建Go语言本身的技术。Go语法树由标准库的go/ast包定义，它是在go/token包定义的词法基础只是抽象的语法树结构。本书简单介绍语法树相关包的使用（出版社已经约稿出版本书，并在开源版本的基础之上增加了语义信息、SSA形式、LLVM和凹语言等内容，因为出版社版权问题不方便全部公开新增内容）。
-![2020_11_23_book_6](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_6.png)
 
 
 -[《Real-Time Communication with WebRTC》](https://github.com/a-wing/webrtc-book-cn)
@@ -72,9 +96,6 @@ Istio 是由 Google、IBM、Lyft 等共同开源的 Service Mesh（服务网格�
 ![2020_11_23_book_10](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_10.jpg)
 
 
--[《Go语言101》](https://github.com/golang101/golang101)
-Go语言101是一本侧重于Go语言语法语义以及运行时相关知识点的编程解释和指导书。 此书旨在尽可能地帮助Go程序员更深更全面地理解Go语言。 此书也搜集了Go语言和Go编程中的很多细节。 此书同时适合Go初学者和有一定经验的Go程序员阅读。
-
 
 - [《渗透测试实战第三版》](https://github.com/Snowming04/The-Hacker-Playbook-3-Translation)
 这本书是 《The Hacker Playbook》 的第三版，通常我们也说它是红队版。因为本书是以红蓝对抗中红队的视角来撰写的。
@@ -88,17 +109,6 @@ Go语言101是一本侧重于Go语言语法语义以及运行时相关知识点�
 ![2020_11_23_book_14](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_14.png)
 
 
-
-- [《C/C++面向WebAssembly编程》](https://github.com/3dgen/cppwasm-book)
-适读人群 ：本书适合从事高性能Web前端开发、跨语言Web应用开发的技术人员学习参考，也可以作为WebAssembly标准参考手册随时查阅。
-作为一种新颖的网页前端技术，WebAssembly的发展日新月异。本书基于已受浏览器普遍支持的WebAssembly极小可用特征集，致力于通过简单易懂的方式，从使用方法到虚拟机设计，讲解WebAssembly的运行原理。极小可用特征集只是快速迭代的起点，SIMD、多线程等更多特性将逐渐被添加到WebAssembly标准中。
-![2020_11_23_book_15](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_15.png)
-
-
-
-- [《C++ Concurrency in Action》](https://github.com/xiaoweiChen/Cpp_Concurrency_In_Action)
-作为对《C++ Concurrency in Action》的中文翻译。本书是基于C++11新标准的并发和多线程编程深度指南。从std::thread、std::mutex、std::future和std::async等基础类的使用，到内存模型和原子操作、基于锁和无锁数据结构的构建，再扩展到并行算法、线程管理，最后还介绍了多线程代码的测试工作。本书的附录部分还对C++11新语言特性中与多线程相关的项目进行了简要的介绍，并提供了C++11线程库的完整参考。本书适合于需要深入了解C++多线程开发的读者，以及使用C++进行各类软件开发的开发人员、测试人员。对于使用第三方线程库的读者，也可以从本书后面的章节中了解到相关的指引和技巧。同时，本书还可以作为C++11线程库的参考工具书。
-![2020_11_23_book_16](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_16.png)
 
 
 - [《设计数据密集型应用》](https://github.com/Vonng/ddia)

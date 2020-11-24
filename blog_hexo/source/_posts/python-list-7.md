@@ -1,5 +1,5 @@
 ---
-title: python-list-7
+title: 【Python 1-7】Python手把手教程之——详解列表List
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'
@@ -12,7 +12,7 @@ cover: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_pyt
 thumbnail: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_python.jpg
 tags:
     - Python
-keywords: Python数字,Python自学教程,大学生学Python,Python教程
+keywords: Python列表,Python自学教程,大学生学Python,Python教程
 categories: Python
 description:
 photos:
@@ -20,6 +20,9 @@ fileName:
 type:
 ---
 ### 列表
+作者 | 弗拉德
+来源 | 弗拉德（公众号：fulade_me)  
+
 列表，在其他语言中又被称为**数组**，是由一系列按特定顺序排列的元素组成。你可以创建包含字母表中所有字母、数字0~9或所有家庭成员姓名的列表。你也可以创建几个列表，把这几个列表又放在一个列表内。
 在Python中，用方括号`[]`来表示列表，并用逗号来分隔其中的元素。下面是一个简单的列表示例，这个列表包含几种常见的水果:
 ``` Python
@@ -257,6 +260,8 @@ len(fruits)
 使用 reverse()再次修改列表元素的排列顺序。打印该列表，核实已恢复到原来的排列顺序。
 使用 sort()修改该列表，使其元素按字母顺序排列。打印该列表，核实排列顺序确实变了。
 使用 sort()修改该列表，使其元素按与字母顺序相反的顺序排列。打印该列表，核实排列顺序确实变了。
+
+想查看作业答案可以去[我的Githu仓库](https://github.com/Johnson8888/learn_python)
 
 ***
 ![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

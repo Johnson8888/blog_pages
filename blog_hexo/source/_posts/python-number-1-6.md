@@ -116,6 +116,4 @@ Happy 23rd Birthday!
 
 
 ***
-<center><strong>THE END</strong></center>
-
 ![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

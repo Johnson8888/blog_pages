@@ -50,19 +50,43 @@ Go语言101是一本侧重于Go语言语法语义以及运行时相关知识点�
 ![2020_11_23_book_16](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_16.png)
 
 
+- [《BuildYourOwnLisp》](https://ksco.gitbooks.io/build-your-own-lisp/content)
+该书教你用 C 语言实现自己的 Lisp 语言。用 1000 多行实现一个小但功能齐全的 Lisp 语言，这里有份中文翻译版本，但是没有翻译完
+![2020_11_23_book_5](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_5.png)
+
+
+### Rust
+- [《Rust 程序设计语言（第二版 & 2018 edition）》](https://github.com/KaiserY/trpl-zh-cn)
+
+
+### Istio
+-[《Istio 服务网格进阶实战》](https://github.com/servicemesher/istio-handbook)
+Istio 是由 Google、IBM、Lyft 等共同开源的 Service Mesh（服务网格）框架，作为云原生时代下承 Kubernetes、上接 Serverless 架构的重要基础设施层，于 2017 年开始进入大众视野。
+2018 年由蚂蚁金服发起成立了 ServiceMesher 社区，作为中国最早的一批研究和推广 Service Mesh 技术的开源社区决定整合社区资源，合作撰写一本开源的 Service Mesh 电子书以飨读者。
+![2020_11_23_book_8](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_8.jpg)
+
+
+
+### 英文书籍
+
+- [《machine-learning-systems-design》](https://github.com/chiphuyen/machine-learning-systems-design)
+一本关于机器学习系统设计的小册子附有练习题
+
+- [《Front-End Developer Handbook 2019》](https://frontendmasters.com/books/front-end-handbook/2019/#1)
+该书适合任何阶段的人用来了解前端开发实践的指南，它概述和讨论了前端工程的实践：如何学习前端、在 2019 年进行前端实践时应该使用哪些工具。
+![2020_11_23_book_9](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_9.jpg)
+
+
+
+
+
+
+
 
 
 - [《Java 编程思想》](https://github.com/apachecn/thinking-in-java-zh)
 ![2020_11_23_book_1](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_1.jpg)
 《计算机科学丛书：Java编程思想（第4版）》赢得了全球程序员的广泛赞誉，即使是晦涩的概念，在BruceEckel的文字亲和力和小而直接的编程示例面前也会化解于无形。从Java的基础语法到高级特性（深入的面向对象概念、多线程、自动项目构建、单元测试和调试等），本书都能逐步指导你轻松掌握。Bruce Eckel，是MindView公司的总裁，该公司向客户提供软件咨询和培训。他是C++标准委员会拥有表决权的成员之一，拥有应用物理学学士和计算机工程硕士学位。除本书外，他还是《C++编程思想》的作者，并与人合著了《C++编程思想第2卷》。
-
-
-
-
-
-- [《软件设计的哲学》](https://github.com/gdut-yy/A-Philosophy-of-Software-Design-zh)
-![2020_11_23_book_3](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_3.jpeg)
-斯坦福教授、Tcl 语言发明者 John Ousterhout 的著作《A Philosophy of Software Design》，自出版以来，好评如潮。按照 IT 图书出版的惯例，如果冠名为“实践”，书中内容关注的是某项技术的细节和技巧；冠名为“艺术”，内容可能是记录一件优秀作品的设计过程和经验；而冠名为“哲学”，则是一些通用的原则和方法论，这些原则方法论串起来，能够形成一个体系。正如”知行合一”、“世界是由原子构成的”、“我思故我在”，这些耳熟能详的句子能够一定程度上代表背后的人物和思想。用一句话概括《A Philosophy of Software Design》，软件设计的核心在于降低复杂性。
 
 
 
@@ -72,10 +96,28 @@ Go语言101是一本侧重于Go语言语法语义以及运行时相关知识点�
 本书由 JavaScript 之父 Brendan Eich 与 ES6 规范首席作者 Allen Wirfs-Brock 联合编写，详细记载和解读了自 1995 年语言诞生到 2015 年 ES6 规范制定为止，共计 20 年的 JavaScript 语言演化历程。全书不仅讲解了大量语言技术细节层面的演进，更复盘了更高层面上规范制定与标准博弈中的历史成败，是一部讲述人类如何在商业与技术上的竞争合作中促进产业发展的故事。
 这个故事相当漫长而复杂。全文分为四个部分，每部分都对应 JavaScript 演化历程中的一个主要阶段。各部分之间还有一段简短的插曲，介绍彼时的开发者们是如何看待与使用 JavaScript 的。
 
-- [《BuildYourOwnLisp》](https://ksco.gitbooks.io/build-your-own-lisp/content)
-该书教你用 C 语言实现自己的 Lisp 语言。用 1000 多行实现一个小但功能齐全的 Lisp 语言，这里有份中文翻译版本，但是没有翻译完
-![2020_11_23_book_5](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_5.png)
 
+
+
+
+
+
+
+---
+
+
+
+
+### 操作系统
+
+- [《操作系统的基本原理与简单实现》](https://github.com/chyyuu/simple_os_book)
+早期开放开源的UNIX操作系统和MIT教授 Frans Kaashoek 等基于UNIX v6设计的xv6操作系统给了我们启发：对一个计算机专业的本科生而言，设计实现一个操作系统有挑战但是可行！但x86相对封闭&复杂和有一定历史包袱的CPU硬件接口给OS学习带来了一定的挑战。1980年前后，UC Berkeley的Dave Patterson主导了Berkeley RISC项目并设计了其第一代的处理器RISC I，并在2014年发展到了开放&开源的第五代指令集架构RISC-V。本书想进行这样的教学尝试，以操作系统基本原理为教学引导，以简洁的RISC-V CPU为底层硬件基础，设计并实现一个微型但全面的“麻雀”操作系统—ucore。期望能够采用简化的计算机硬件为基础，以操作系统的基本概念和核心原理为实践指导，逐步解析操作系统各种知识点和对应的实验，做到有“理”可循和有“码”可查，最终让读者了解和掌握操作系统的原理、设计与实现。
+
+### 计算机软件设计
+
+- [《软件设计的哲学》](https://github.com/gdut-yy/A-Philosophy-of-Software-Design-zh)
+![2020_11_23_book_3](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_3.jpeg)
+斯坦福教授、Tcl 语言发明者 John Ousterhout 的著作《A Philosophy of Software Design》，自出版以来，好评如潮。按照 IT 图书出版的惯例，如果冠名为“实践”，书中内容关注的是某项技术的细节和技巧；冠名为“艺术”，内容可能是记录一件优秀作品的设计过程和经验；而冠名为“哲学”，则是一些通用的原则和方法论，这些原则方法论串起来，能够形成一个体系。正如”知行合一”、“世界是由原子构成的”、“我思故我在”，这些耳熟能详的句子能够一定程度上代表背后的人物和思想。用一句话概括《A Philosophy of Software Design》，软件设计的核心在于降低复杂性。
 
 
 -[《Real-Time Communication with WebRTC》](https://github.com/a-wing/webrtc-book-cn)
@@ -83,10 +125,6 @@ Go语言101是一本侧重于Go语言语法语义以及运行时相关知识点�
 作者通过实例学习的方法非常适合那些希望理解实时通信的 web 程序员，以及不熟悉 HTML5 和基于 javascript 的客户端-服务器 web 编程的电信架构师。
 ![2020_11_23_book_7](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_7.jpeg)
 
--[《Istio 服务网格进阶实战》](https://github.com/servicemesher/istio-handbook)
-Istio 是由 Google、IBM、Lyft 等共同开源的 Service Mesh（服务网格）框架，作为云原生时代下承 Kubernetes、上接 Serverless 架构的重要基础设施层，于 2017 年开始进入大众视野。
-2018 年由蚂蚁金服发起成立了 ServiceMesher 社区，作为中国最早的一批研究和推广 Service Mesh 技术的开源社区决定整合社区资源，合作撰写一本开源的 Service Mesh 电子书以飨读者。
-![2020_11_23_book_8](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_8.jpg)
 
 
 - [《JAVA编程思想 第五版》](https://github.com/LingCoder/OnJava8)
@@ -119,25 +157,14 @@ Istio 是由 Google、IBM、Lyft 等共同开源的 Service Mesh（服务网格�
 - [《SDN网络指南》](https://github.com/feiskyer/sdn-handbook)
 SDN （Software Defined Networking）作为当前最重要的热门技术之一，目前已经普遍得到大家的共识。有关SDN的资料和书籍非常丰富，但入门和学习SDN依然是非常困难。本书整理了SDN实践中的一些基本理论和实践案例心得，希望能给大家带来启发，也欢迎大家关注和贡献。
 
-- [《操作系统的基本原理与简单实现》](https://github.com/chyyuu/simple_os_book)
-早期开放开源的UNIX操作系统和MIT教授 Frans Kaashoek 等基于UNIX v6设计的xv6操作系统给了我们启发：对一个计算机专业的本科生而言，设计实现一个操作系统有挑战但是可行！但x86相对封闭&复杂和有一定历史包袱的CPU硬件接口给OS学习带来了一定的挑战。1980年前后，UC Berkeley的Dave Patterson主导了Berkeley RISC项目并设计了其第一代的处理器RISC I，并在2014年发展到了开放&开源的第五代指令集架构RISC-V。本书想进行这样的教学尝试，以操作系统基本原理为教学引导，以简洁的RISC-V CPU为底层硬件基础，设计并实现一个微型但全面的“麻雀”操作系统—ucore。期望能够采用简化的计算机硬件为基础，以操作系统的基本概念和核心原理为实践指导，逐步解析操作系统各种知识点和对应的实验，做到有“理”可循和有“码”可查，最终让读者了解和掌握操作系统的原理、设计与实现。
 
 
 
 
-
-- [《Rust 程序设计语言（第二版 & 2018 edition）》](https://github.com/KaiserY/trpl-zh-cn)
 
 
 
 #### 英文
-
-- [《machine-learning-systems-design》](https://github.com/chiphuyen/machine-learning-systems-design)
-一本关于机器学习系统设计的小册子附有练习题
-
-- [《Front-End Developer Handbook 2019》](https://frontendmasters.com/books/front-end-handbook/2019/#1)
-该书适合任何阶段的人用来了解前端开发实践的指南，它概述和讨论了前端工程的实践：如何学习前端、在 2019 年进行前端实践时应该使用哪些工具。
-![2020_11_23_book_9](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_9.jpg)
 
 
 - [《Python Data Science Handbook》](https://github.com/jakevdp/PythonDataScienceHandbook)

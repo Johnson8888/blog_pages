@@ -1,5 +1,5 @@
 ---
-title: Protoc 同时编译多个.protoc文件
+title: protoc 同时编译多个.protoc文件
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'
@@ -19,6 +19,10 @@ photos:
 fileName:
 type:
 ---
+
+作者 | 弗拉德
+来源 | 弗拉德（公众号：fulade_me)
+
 ##### 官方的示例
 只是编译一个文件的命令行
 ``` bash

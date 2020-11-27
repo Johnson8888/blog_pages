@@ -4,9 +4,9 @@ title: 【Flutter 1-5】运行Flutter的第一个项目——计数器
 tags:
   - Flutter
 toc: true
-cover: >-
+cover: 
   https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg
-thumbnail: >-
+thumbnail: 
   https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg
 categories: Flutter
 date: 2020-10-25 21:06:04

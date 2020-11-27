@@ -30,6 +30,7 @@ fruits = ['Apple','Banana','Pear','Orange']
 print(fruits)
 ['Apple','Banana','Pear','Orange']
 ```
+<!--more-->
 #### 访问列表数据
 列表是有序的数据集合，每一个元素都有一个位置参数。比如上面的`fruits`列表里面，其中`Apple`的位置参数是`0`，`Banana`位置参数是`1`。要访问列表元素，可指出列表的名称，再指出元素的索引，并将其放在方括号内。
 例如，下面的代码从列表`fruits`中选出第一种水果:

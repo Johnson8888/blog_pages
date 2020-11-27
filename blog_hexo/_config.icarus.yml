@@ -19,19 +19,19 @@ head:
         type: blog
         # Page URL (og:url) (optional)
         # You should leave this blank for most of the time
-        url: 
+        url: https://www.fulade.me
         # Page cover (og:image) (optional)
         # You should leave this blank for most of the time
-        image: 
+        image: /img/favicon.svg
         # Site name (og:site_name) (optional)
         # You should leave this blank for most of the time
-        site_name: 弗拉德的技术博客 
+        site_name: 首页 | 弗拉德的技术博客 
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
         author: 弗拉德
         # Page description (og:description) (optional)
         # You should leave this blank for most of the time
-        description: 
+        description: 首页 | 弗拉德的技术博客
         # Twitter card type (twitter:card)
         twitter_card: TwitterId
         # Twitter ID (twitter:creator)
@@ -49,24 +49,33 @@ head:
     structured_data:
         # Page title (optional)
         # You should leave this blank for most of the time
-        title: 
+        title: 首页 | 弗拉德的技术博客
         # Page description (optional)
         # You should leave this blank for most of the time
-        description: 
+        description: 首页 | 弗拉德的技术博客
         # Page URL (optional)
         # You should leave this blank for most of the time
-        url: 
+        url: https://www.fulade.me
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: 
+        author: 弗拉德
         # Page images (optional)
         # You should leave this blank for most of the time
-        image: 
+        image: https://www.fulade.me
     # Additional HTML meta tags in an array
     meta:
         # Meta tag specified in <attribute>=<value> style
         # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
-        - ''
+        - 'name=description;content=首页 | 弗拉德的技术博客'
+        - 'name=keywords;content=Python自学,Flutter自学,iOS学习,大学生学Python,大学生学Flutter'
+        - 'name=title;content=弗拉德技术博客'
+        - 'name=author;content=弗拉德'
+        - 'name=robots;content=index,follow'
+        - 'name=google;content=index,follow'
+        - 'name=googlebot;content=index,follow'
+        - 'name=verify;content=index,follow'
+        - 'name=apple-mobile-web-app-capable;content=yes'
+
     # URL or path to the website's RSS atom.xml
     rss: 
 # Page top navigation bar configurations
@@ -193,7 +202,7 @@ sidebar:
     # Left sidebar configurations
     left:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: false
+        sticky: true
     # Right sidebar configurations
     right:
         # Whether the sidebar sticks to the top when page scrolls

@@ -2,8 +2,8 @@
 permalink: how-to-set-up-hexo-blog.html
 title: Mac下使用GitHub+Hexo搭建个人博客
 date: 2020-09-26 14:09:54
-cover: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/page_conver_hexo.png
-thumbnail: https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/page_conver_hexo.png
+cover: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_hexo.png
+thumbnail: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_hexo.png
 toc: true
 description: 安装和配置Hexo博客
 tags:
@@ -76,7 +76,8 @@ INFO  Start processing
 INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop. 
 ```
 预览效果如下
-![preview_hexo_20200928](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/preview_hexo_20200928.jpg)
+
+![preview_hexo_20200928](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/preview_hexo_20200928.jpg)
 
 
 
@@ -101,21 +102,21 @@ cat ~/.ssh/id_rsa.pub
 或者可以找到这个文件并打开它，复制里面的内容。
 
 登录github账号 找到 `setting`
-![setting_20200928](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/setting_20200928.png)
+![setting_20200928](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/setting_20200928.png)
 
 先点击 ` SSH and GPG keys` 然后再点击 ` New SSH key ` 进入到配置 SSH Key 的页面
-![select_sshkey_20200928](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/select_sshkey_20200928.jpg?token=ABHYKC5WITD7CZYQDC4ABAK7OFO3W)
+![select_sshkey_20200928](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/select_sshkey_20200928.jpg?token=ABHYKC5WITD7CZYQDC4ABAK7OFO3W)
 
 然后输入复制好的key的内容
 
-![set_my_pc_ssh_key_20200928](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/set_my_pc_ssh_key_20200928.png?token=ABHYKC4PWIEGG63VBN3Q3NS7OFPEC)
+![set_my_pc_ssh_key_20200928](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/set_my_pc_ssh_key_20200928.png?token=ABHYKC4PWIEGG63VBN3Q3NS7OFPEC)
 
 点击 ` Add SSH Key ` 即可
 
 ##### **本地博客关联到Github主页**
 登录Github并且创建一个名字为 `username.githug.io` 的仓库，比如我的仓库名字为 `Johnson8888.github.io`
 因为我已经创建过了，所以会显示红色，如果创建过，会显示绿色的，然后点击创建。切记一定要选择 `Public`，否定不能访问。
-![create_my_repo_20200928](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/create_my_repo_20200928.png?token=ABHYKCYY4HSYNU4W6VVG5Q27OFPVO)
+![create_my_repo_20200928](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/create_my_repo_20200928.png?token=ABHYKCYY4HSYNU4W6VVG5Q27OFPVO)
 
 然后命令行切换到本地blog目录下 `cd ~/Desktop/blog`
 执行命令

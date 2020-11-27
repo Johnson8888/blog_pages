@@ -8,9 +8,6 @@ CSDN
 51CTO
 博客园
 慕课
-B站
 
 
-
-1. flutter-hello-world[1-5]
-2. python-args [1-4] 变量
+hexo publish post python-handle-list-1-8   【不带有.md后缀】

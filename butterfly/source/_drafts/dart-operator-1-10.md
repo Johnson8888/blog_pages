@@ -8,16 +8,134 @@ authorDesc: 技术改变生活
 toc: true
 comments: true
 date: 2020-11-29 22:08:38
-cover:
-thumbnail:
-tags:
-categories:
-keywords:
-description:
+cover: https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/page_conver_dart.jpg
+thumbnail: https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/page_conver_dart.jpg
+tags: 
+    - Dart语言
+    - Dart运算符
+    - Flutter教程
+categories: Flutter
+keywords: Dart语言，Dart运算符，Flutter教程
+description: 运算符是一种告诉编译器执行特定的数学或逻辑操作的符号。Dart 语言内置了丰富的运算符，并提供了以下类型的运算符：算术运算符、关系运算符、类型判断运算符、赋值运算符、逻辑运算符、按位和移位运算符、条件表达式、级联运算符、其他运算符。
 photos:
 fileName:
 type:
 ---
 
-作者 | 弗拉德
-来源 | 弗拉德（公众号：fulade_me)
+
+### 运算符
+运算符是一种告诉编译器执行特定的数学或逻辑操作的符号。Dart 语言内置了丰富的运算符，并提供了以下类型的运算符：算术运算符、关系运算符、类型判断运算符、赋值运算符、逻辑运算符、按位和移位运算符、条件表达式、级联运算符、其他运算符。
+
+#### 算数运算符
+|  算数运算符   | 描述  |
+|  ----  | ----  |
+| +  | 加 |
+| -  | 减 |
+| - 表达式  | 一元负, 也可以作为反转（反转表达式的符号） |
+| *  | 乘 |
+| /  | 除 |
+| ~/  | 除并取整 |
+| %  | 取模 |
+示例：
+``` Dart
+assert(2 + 3 == 5);
+assert(2 - 3 == -1);
+assert(2 * 3 == 6);
+assert(5 / 2 == 2.5); // 结果是一个浮点数
+assert(5 ~/ 2 == 2); // 结果是一个整数
+assert(5 % 2 == 1); // 取余
+
+assert('5/2 = ${5 ~/ 2} r ${5 % 2}' == '5/2 = 2 r 1');
+```
+Dart 还支持自增自减运算符：
+
+|  自增自减运算符   | 描述  |
+|  ----  | ----  |
+| ++ var  | var = var + 1 (表达式的值为 var + 1) |
+| var ++  | var = var + 1 (表达式的值为 var) |
+| -- var  | var = var – 1 (表达式的值为 var – 1) |
+| var --  | var = var – 1 (表达式的值为 var) |
+示例：
+``` Dart
+var a, b;
+
+a = 0;
+b = ++a; // 在 b 赋值前将 a 增加 1。
+assert(a == b); // 1 == 1
+
+a = 0;
+b = a++; // 在 b 赋值后将 a 增加 1。
+assert(a != b); // 1 != 0
+
+a = 0;
+b = --a; // 在 b 赋值前将 a 减少 1。
+assert(a == b); // -1 == -1
+
+a = 0;
+b = a--; // 在 b 赋值后将 a 减少 1。
+assert(a != b); // -1 != 0
+```
+
+#### 关系运算符
+|  关系运算符   | 描述  |
+|  ----  | ----  |
+| ==  | 相等 |
+|!=	|不等于|
+|>	|大于|
+|<	|小于|
+|>=	|大于等于|
+|<=|小于等于|
+要判断两个对象 x 和 y 是否表示相同的事物使用 == 即可。（在极少数情况下，可能需要使用 identical() 函数来确定两个对象是否完全相同。）。下面是 == 运算符的一些规则：
+
+假设有变量 x 和 y，且 x 和 y 至少有一个为 null，则当且仅当 x 和 y 均为 null 时 x == y 才会返回 true，否则只有一个为 null 则返回 false。
+
+x.==(y) 将会返回值，这里不管有没有 y，即 y 是可选的。也就是说 == 其实是 x 中的一个方法，并且可以被重写。详情请查阅重写运算符。
+
+下面的代码给出了每一种关系运算符的示例：
+
+``` Dart
+assert(2 == 2);
+assert(2 != 3);
+assert(3 > 2);
+assert(2 < 3);
+assert(3 >= 3);
+assert(2 <= 3);
+```
+#### 类型判断运算符
+`as`、`is`、`is!` 运算符是在运行时判断对象类型的运算符。
+|  类型判断运算符   | 描述  |
+|  ----  | ----  |
+|as|类型转换（也用作指定类前缀)）|
+|is	|如果对象是指定类型则返回 true|
+|is! |如果对象是指定类型则返回 false|
+
+当且仅当 obj 实现了 T 的接口，obj is T 才是 true。例如 obj is Object 总为 true，因为所有类都是 Object 的子类。
+
+仅当你确定这个对象是该类型的时候，你才可以使用 as 操作符可以把对象转换为特定的类型。例如：
+``` Dart
+(emp as Person).firstName = 'Bob';
+```
+如果你不确定这个对象类型是不是 T，请在转型前使用 is T 检查类型。
+``` Dart
+if (emp is Person) {
+  // 类型检查
+  emp.firstName = 'Bob';
+}
+```
+你可以使用 `as` 运算符进行缩写：
+``` Dart
+(emp as Person).firstName = 'Bob';
+``
+#### 赋值运算符
+可以使用 = 来赋值，同时也可以使用 ??= 来为值为 null 的变量赋值。
+``` Dart
+// 将 value 赋值给 a (Assign value to a)
+a = value;
+// 当且仅当 b 为 null 时才赋值
+b ??= value;
+```
+像 += 这样的赋值运算符将算数运算符和赋值运算符组合在了一起。
+|         |      |       |       |       |       |  
+|  ----  | ----  | ----  | ----  | ----  | ----  |
+|=	|–=	|/=|%=|	>>=|	^=|
+|+=	|*=| ~/=|<<=	|&=|	=|

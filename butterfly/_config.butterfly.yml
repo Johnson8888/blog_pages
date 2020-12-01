@@ -628,8 +628,8 @@ aside:
       text: 关注我
       link: https://blog.csdn.net/nsurl
   card_announcement:
-    enable: true
-    content: 欢迎来到我的博客
+    enable: true   
+    content: <div class="announcement_content">欢迎各位关注我的微信公众号，微信搜索：fulade_me </div><img class=" lazyloaded" data-src="https://cdn.shawnlin.cn/blog/images/notice.png" onerror="onerror=null,src=&quot;/img/friend_404.gif&quot;" width="180px" style="display:block;margin:0 auto" src="https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/gzh_qrcode.jpg">
   card_recent_post:
     enable: true
     limit: 8 # if set 0 will show all

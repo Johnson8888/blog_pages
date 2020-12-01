@@ -679,7 +679,7 @@ newest_comments:
     default_avatar: # mp/identicon/monsterid/wavatar/retro/robohash/blank
   github_issues:
     enable: true
-    repo: /Johnson8888/Johnson8888.github.io
+    repo: Johnson8888/Johnson8888.github.io
   disqus:
     enable: false
     forum:

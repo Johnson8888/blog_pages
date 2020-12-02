@@ -139,3 +139,121 @@ b ??= value;
 |  ----  | ----  | ----  | ----  | ----  | ----  |
 |=	|–=	|/=|%=|	>>=|	^=|
 |+=	|*=| ~/=|<<=	|&=|	=|
+下面的例子展示了如何使用赋值以及复合赋值运算符：
+``` Dart
+a += b  	//就 等同于 a = a + b
+var a = 2; // 使用 = 赋值 (Assign using =)
+a *= 3; // 赋值并做乘法运算 Assign and multiply: a = a * 3
+assert(a == 6);
+```
+
+#### 逻辑运算符
+|  类型判断运算符   | 描述  |
+|  ----  | ----  |
+|!表达式|对表达式结果取反（即将 true 变为 false，false 变为 true）|
+| &#124;&#124;	|逻辑或|
+|&& |逻辑与|
+下面是使用逻辑表达式的示例：
+``` Dart
+if (!done && (col == 0 || col == 3)) {
+  // ...Do something...
+}
+```
+#### 按位和移位运算符
+
+|  按位和移位运算符   | 描述  |
+|  ----  | ----  |
+|&	|按位与| 
+|&#124;	|按位或|
+|^	|按位异或|
+|~ 表达式|	按位取反（即将 “0” 变为 “1”，“1” 变为 “0”）|
+|<<	|位左移|
+|>>	|位右移|
+下面是使用按位和移位运算符的示例：
+```Dart
+final value = 0x22;
+final bitmask = 0x0f;
+assert((value & bitmask) == 0x02); // 按位与 (AND)
+assert((value & ~bitmask) == 0x20); // 取反后按位与 (AND NOT)
+assert((value | bitmask) == 0x2f); // 按位或 (OR)
+assert((value ^ bitmask) == 0x2d); // 按位异或 (XOR)
+assert((value << 4) == 0x220); // 位左移 (Shift left)
+assert((value >> 4) == 0x02); // 位右移 (Shift right)
+```
+#### 条件表达式
+
+`条件 ? 表达式 1 : 表达式 2` ：如果条件为 true，执行表达式 1并返回执行结果，否则执行表达式 2 并返回执行结果。
+`表达式 1 ?? 表达式 2`：如果表达式 1 为非 null 则返回其值，否则执行表达式 2 并返回其值。
+如果赋值是根据布尔表达式则考虑使用 ?:  
+``` Dart
+var visibility = isPublic ? 'public' : 'private';
+```
+如果赋值是根据判定是否为 null 则考虑使用 ??
+``` Dart
+String playerName(String name) => name ?? 'Guest';
+```
+上述示例还可以写成至少下面两种不同的形式，只是不够简洁：
+``` Dart
+// 相对使用 ?: 运算符来说稍微长了点。(Slightly longer version uses ?: operator).
+String playerName(String name) => name != null ? name : 'Guest';
+
+// 如果使用 if-else 则更长。
+String playerName(String name) {
+  if (name != null) {
+    return name;
+  } else {
+    return 'Guest';
+  }
+}
+```
+
+#### 级联运算符（..）
+级联运算符（..）可以让你在同一个对象上连续调用多个对象的变量或方法。
+比如下面的代码：
+
+``` dart
+querySelector('#confirm') // 获取对象 (Get an object).
+  ..text = 'Confirm' // 使用对象的成员 (Use its members).
+  ..classes.add('important')
+  ..onClick.listen((e) => window.alert('Confirmed!'));
+```
+第一个方法 `querySelector` 返回了一个 `Selector` 对象，后面的级联操作符都是调用这个 `Selector` 对象的成员并忽略每个操作的返回值。
+
+上面的代码相当于：
+``` dart
+var button = querySelector('#confirm');
+button.text = 'Confirm';
+button.classes.add('important');
+button.onClick.listen((e) => window.alert('Confirmed!'));
+```
+级联运算符可以嵌套，例如：
+``` dart
+final addressBook = (AddressBookBuilder()
+      ..name = 'jenny'
+      ..email = 'jenny@example.com'
+      ..phone = (PhoneNumberBuilder()
+            ..number = '415-555-0100'
+            ..label = 'home')
+          .build())
+    .build();
+```
+在返回对象的函数中谨慎使用级联操作符。例如，下面的代码是错误的：
+``` dart
+var sb = StringBuffer();
+sb.write('foo')
+  ..write('bar'); // 出错：void 对象中没有方法 write (Error: method 'write' isn't defined for 'void').
+```
+上述代码中的 `sb.write()` 方法返回的是 void，返回值为 void 的方法则不能使用级联运算符。
+
+#### 其他运算符
+大多数其它的运算符，已经在其它的示例中使用过：
+| 运算符   | 名字  |  描述 |
+| ---   | ---  |  --- |
+|()	|使用方法	|代表调用一个方法|
+|[]	|访问 List	|访问 List 中特定位置的元素|
+|.	|访问成员|	成员访问符|
+|?.	|条件访问成员|	与上述成员访问符类似，但是左边的操作对象不能为 null，例如 foo?.bar，如果 foo 为 null 则返回 null ，否则返回 bar|
+
+更多关于 ., ?. 和 .. 运算符介绍，请参考下一篇[类]().
+
+![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

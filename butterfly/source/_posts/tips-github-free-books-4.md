@@ -1,23 +1,41 @@
 ---
-title: 免费送书啦！细数Github大神们的开源书籍！[二]
+title: '免费送书啦！细数Github大神们的开源书籍！[二]'
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'
 authorAbout: '一生只有一个职业:学生'
 authorDesc: 技术改变生活
+cover: >-
+  https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_freebook.png
+thumbnail: >-
+  https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_freebook.png
 toc: true
 comments: true
-date: 2020-12-03 15:49:34
-cover: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_11.jpg
-thumbnail: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_11_23_book_11.jpg
-    - Tips
-keywords: 免费送书，github书籍，freebook，github上免费书籍
+tags:
+  - Tips
 categories: Tips
-description: 《软件设计的哲学》斯坦福教授、Tcl 语言发明者 John Ousterhout 的著作《A Philosophy of Software Design》，自出版以来，好评如潮。按照 IT 图书出版的惯例，如果冠名为“实践”，书中内容关注的是某项技术的细节和技巧；冠名为“艺术”，内容可能是记录一件优秀作品的设计过程和经验；而冠名为“哲学”，则是一些通用的原则和方法论，这些原则方法论串起来，能够形成一个体系。正如”知行合一”、“世界是由原子构成的”、“我思故我在”，这些耳熟能详的句子能够一定程度上代表背后的人物和思想。用一句话概括《A Philosophy of Software Design》，软件设计的核心在于降低复杂性。
+keywords: 免费送书，github书籍，freebook，github上免费书籍
+description: >-
+  软件设计的哲学》斯坦福教授、Tcl 语言发明者 John Ousterhout 的著作《A Philosophy of Software
+  Design》，自出版以来，好评如潮。按照 IT
+  图书出版的惯例，如果冠名为“实践”，书中内容关注的是某项技术的细节和技巧；冠名为“艺术”，内容可能是记录一件优秀作品的设计过程和经验；而冠名为“哲学”，则是一些通用的原则和方法论，这些原则方法论串起来，能够形成一个体系。正如”知行合一”、“世界是由原子构成的”、“我思故我在”，这些耳熟能详的句子能够一定程度上代表背后的人物和思想。用一句话概括《A
+  Philosophy of Software Design》，软件设计的核心在于降低复杂性。
+date: 2020-12-03 15:49:34
 photos:
 fileName:
 type:
 ---
+
+作者 | 弗拉德
+来源 | 弗拉德（公众号：fulade_me)
+
+
+
+
+
+
+
+
 
 
 ### 计算机软件设计

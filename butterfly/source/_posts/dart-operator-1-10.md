@@ -1,30 +1,35 @@
 ---
-title: dart-operator-1-10
+title: Flutter 1-10】Flutter手把手教程Dart语言——运算符
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'
 authorAbout: '一生只有一个职业:学生'
 authorDesc: 技术改变生活
+cover: 'https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/page_conver_dart.jpg'
+thumbnail: 'https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/page_conver_dart.jpg'
 toc: true
 comments: true
-date: 2020-11-29 22:08:38
-cover: https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/page_conver_dart.jpg
-thumbnail: https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/page_conver_dart.jpg
-tags: 
-    - Dart语言
-    - Dart运算符
-    - Flutter教程
+tags:
+  - Dart语言
+  - Dart运算符
+  - Flutter教程
 categories: Flutter
 keywords: Dart语言，Dart运算符，Flutter教程
-description: 运算符是一种告诉编译器执行特定的数学或逻辑操作的符号。Dart 语言内置了丰富的运算符，并提供了以下类型的运算符：算术运算符、关系运算符、类型判断运算符、赋值运算符、逻辑运算符、按位和移位运算符、条件表达式、级联运算符、其他运算符。
+description: >-
+  运算符是一种告诉编译器执行特定的数学或逻辑操作的符号。Dart
+  语言内置了丰富的运算符，并提供了以下类型的运算符：算术运算符、关系运算符、类型判断运算符、赋值运算符、逻辑运算符、按位和移位运算符、条件表达式、级联运算符、其他运算符。
+date: 2020-12-01 22:08:38
 photos:
 fileName:
 type:
 ---
 
+作者 | 弗拉德
+来源 | 弗拉德（公众号：fulade_me)
+
 
 ### 运算符
-运算符是一种告诉编译器执行特定的数学或逻辑操作的符号。Dart 语言内置了丰富的运算符，并提供了以下类型的运算符：算术运算符、关系运算符、类型判断运算符、赋值运算符、逻辑运算符、按位和移位运算符、条件表达式、级联运算符、其他运算符。
+运算符是一种告诉编译器执行特定的数学或逻辑操作的符号。Dart语言内置了丰富的运算符，并提供了以下类型的运算符：**算术运算符、关系运算符、类型判断运算符、赋值运算符、逻辑运算符、按位和移位运算符、条件表达式、级联运算符以及其他运算符**。
 
 #### 算数运算符
 |  算数运算符   | 描述  |
@@ -85,11 +90,12 @@ assert(a != b); // -1 != 0
 |<	|小于|
 |>=	|大于等于|
 |<=|小于等于|
-要判断两个对象 x 和 y 是否表示相同的事物使用 == 即可。（在极少数情况下，可能需要使用 identical() 函数来确定两个对象是否完全相同。）。下面是 == 运算符的一些规则：
+要判断两个对象 x 和 y 是否表示相同的事物使用 `==` 即可。（在极少数情况下，可能需要使用 `identical()` 函数来确定两个对象是否完全相同）。
+下面是 `==` 运算符的一些规则：
 
-假设有变量 x 和 y，且 x 和 y 至少有一个为 null，则当且仅当 x 和 y 均为 null 时 x == y 才会返回 true，否则只有一个为 null 则返回 false。
+1. 假设有变量 `x` 和 `y`，且 `x` 和 `y` 至少有一个为 `null`，则当且仅当 `x` 和 `y` 均为 `null` 时 `x == y` 才会返回 `true`，否则只有一个为 `null` 则返回 `false`。
 
-x.==(y) 将会返回值，这里不管有没有 y，即 y 是可选的。也就是说 == 其实是 x 中的一个方法，并且可以被重写。详情请查阅重写运算符。
+2. `x.==(y)` 将会返回值，这里不管有没有`y`，即 `y` 是可选的。也就是说 `==` 其实是 `x` 中的一个方法，并且可以被重写。
 
 下面的代码给出了每一种关系运算符的示例：
 
@@ -109,13 +115,13 @@ assert(2 <= 3);
 |is	|如果对象是指定类型则返回 true|
 |is! |如果对象是指定类型则返回 false|
 
-当且仅当 obj 实现了 T 的接口，obj is T 才是 true。例如 obj is Object 总为 true，因为所有类都是 Object 的子类。
+当且仅当 obj对象 实现了 `T` 的接口，obj对象 `is T` 才是 `true`。例如 obj对象 `is Object` 总为 `true`，因为所有类都是 `Object` 的子类。
 
-仅当你确定这个对象是该类型的时候，你才可以使用 as 操作符可以把对象转换为特定的类型。例如：
+仅当你确定这个对象是该类型的时候，你才可以使用 `as` 操作符可以把对象转换为特定的类型。例如：
 ``` Dart
 (emp as Person).firstName = 'Bob';
 ```
-如果你不确定这个对象类型是不是 T，请在转型前使用 is T 检查类型。
+如果你不确定这个对象类型是不是 `T`，请在转型前使用 `is T` 检查类型。
 ``` Dart
 if (emp is Person) {
   // 类型检查
@@ -125,16 +131,16 @@ if (emp is Person) {
 你可以使用 `as` 运算符进行缩写：
 ``` Dart
 (emp as Person).firstName = 'Bob';
-``
+```
 #### 赋值运算符
-可以使用 = 来赋值，同时也可以使用 ??= 来为值为 null 的变量赋值。
+可以使用 `=` 来赋值，同时也可以使用 `??=` 来为值为 `null` 的变量赋值。
 ``` Dart
 // 将 value 赋值给 a (Assign value to a)
 a = value;
 // 当且仅当 b 为 null 时才赋值
 b ??= value;
 ```
-像 += 这样的赋值运算符将算数运算符和赋值运算符组合在了一起。
+像 `+=` 这样的赋值运算符将算数运算符和赋值运算符组合在了一起。
 |         |      |       |       |       |       |  
 |  ----  | ----  | ----  | ----  | ----  | ----  |
 |=	|–=	|/=|%=|	>>=|	^=|
@@ -161,7 +167,7 @@ if (!done && (col == 0 || col == 3)) {
 ```
 #### 按位和移位运算符
 
-|  按位和移位运算符   | 描述  |
+| 按位和移位运算符 | 描述  |
 |  ----  | ----  |
 |&	|按位与| 
 |&#124;	|按位或|
@@ -182,13 +188,13 @@ assert((value >> 4) == 0x02); // 位右移 (Shift right)
 ```
 #### 条件表达式
 
-`条件 ? 表达式 1 : 表达式 2` ：如果条件为 true，执行表达式 1并返回执行结果，否则执行表达式 2 并返回执行结果。
-`表达式 1 ?? 表达式 2`：如果表达式 1 为非 null 则返回其值，否则执行表达式 2 并返回其值。
-如果赋值是根据布尔表达式则考虑使用 ?:  
+`条件 ? 表达式 1 : 表达式 2` ：如果条件为 `true`，执行`表达式 1`并返回执行结果，否则执行`表达式 2` 并返回执行结果。
+`表达式 1 ?? 表达式 2`：如果`表达式 1` 为非 null 则返回其值，否则执行`表达式 2` 并返回其值。
+如果赋值是根据布尔表达式则考虑使用 `?:`  
 ``` Dart
 var visibility = isPublic ? 'public' : 'private';
 ```
-如果赋值是根据判定是否为 null 则考虑使用 ??
+如果赋值是根据判定是否为 `null` 则考虑使用 `??`
 ``` Dart
 String playerName(String name) => name ?? 'Guest';
 ```
@@ -207,8 +213,8 @@ String playerName(String name) {
 }
 ```
 
-#### 级联运算符（..）
-级联运算符（..）可以让你在同一个对象上连续调用多个对象的变量或方法。
+#### 级联运算符
+级联运算符`（..）`可以让你在同一个对象上连续调用多个对象的变量或方法。
 比如下面的代码：
 
 ``` dart
@@ -243,7 +249,7 @@ var sb = StringBuffer();
 sb.write('foo')
   ..write('bar'); // 出错：void 对象中没有方法 write (Error: method 'write' isn't defined for 'void').
 ```
-上述代码中的 `sb.write()` 方法返回的是 void，返回值为 void 的方法则不能使用级联运算符。
+上述代码中的 `sb.write()` 方法返回的是 `void`，返回值为 `void` 的方法则不能使用级联运算符。
 
 #### 其他运算符
 大多数其它的运算符，已经在其它的示例中使用过：
@@ -254,6 +260,6 @@ sb.write('foo')
 |.	|访问成员|	成员访问符|
 |?.	|条件访问成员|	与上述成员访问符类似，但是左边的操作对象不能为 null，例如 foo?.bar，如果 foo 为 null 则返回 null ，否则返回 bar|
 
-更多关于 ., ?. 和 .. 运算符介绍，请参考下一篇[类]().
+更多关于 `., ?.` 和 `..` 运算符介绍，会在下一章**Flutter手把手教程Dart语言——类**中讲解.
 
 ![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

@@ -1,5 +1,5 @@
 ---
-title: dart-class-1-11
+title: Flutter 1-10】Flutter手把手教程Dart语言——类
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'

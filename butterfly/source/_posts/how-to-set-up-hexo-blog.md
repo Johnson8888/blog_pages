@@ -46,7 +46,7 @@ brew install git
 ```
 检查git是否安装成功
 ``` bash
-git -v
+git version
 ``` 
 输出结果:
 ``` bash
@@ -70,7 +70,7 @@ hexo init
 hexo s 
 ``` 
 当看到如下输出就可以预览我们创建的博客了
-```
+``` bash
 INFO  Validating config
 INFO  Start processing
 INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop. 

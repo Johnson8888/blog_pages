@@ -24,7 +24,7 @@ type:
 中文数字写作三十七、卅七
 罗马数字写作XXXVII
 阿拉伯数字二进制写作100101
-<!--more-->
+
 [文章首发地址](http://fulade.me/python-number-1-6.html)
 
 作者 | 弗拉德

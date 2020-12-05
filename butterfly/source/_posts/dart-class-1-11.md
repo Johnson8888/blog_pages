@@ -5,8 +5,10 @@ avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jp
 authorLink: 'http://fulade.me'
 authorAbout: '一生只有一个职业:学生'
 authorDesc: 技术改变生活
-cover: 'https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/page_conver_dart.jpg'
-thumbnail: 'https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/page_conver_dart.jpg'
+cover: 
+  https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg
+thumbnail: 
+  https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg
 toc: true
 comments: true
 tags:

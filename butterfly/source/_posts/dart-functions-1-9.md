@@ -23,7 +23,7 @@ type:
 来源 | 弗拉德（公众号：fulade_me)
 #### **函数**
 >Dart 同样也是一种面向对象的语音。所以即便函数也是一个对象。类型为 `Function`，这意味着函数可做作为变量，也也可以作为函数的参数。
-<!--more-->
+
 下面是定义一个函数的例子：
 ```Dart
 isEmpty(List aList) {
@@ -38,7 +38,7 @@ bool isEmpty(List aList) {
 ```
 如果函数体内只包含一个表达式，你可以使用简写语法：
 ```Dart
-bool isEmpty(List aList) => aList == 0;
+bool isEmpty(List aList) => aList.length == 0;
 ```
  `=>` 表达的 是 `{ return 表达式; }` 的简写，有时`=>`也称之为**胖箭头语法**。
 

@@ -39,11 +39,11 @@ tags:
 ##### <span id="jump2_1">1. 跨平台使用相同的UI和业务逻辑</span>
 我们知道，基本上所有的跨平台框架都提供了一种在目标平台之间共享代码的实现方式。但是没有任何一个平台像Flutter这样允许共享UI代码以及UI本身。
 为了说明这一点，下面我们来看一下其中一个跨平台框架UI的实现逻辑：
-![2020_09_30_other_paltform](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_09_30_other_paltform.png)
+![2020_09_30_other_paltform](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_09_30_other_paltform.png)
 React Navite 的渲染过程看起来像是在每个平台上都很简单。但是从图中我们不难发现，这种渲染过程需要依然各个平台原生组件来进行渲染，React Native 就是帮我们实现了对各个平台应用层UI控件的映射。这就需要将每个动画每个UI映射到各个平台的动画和UI上，显然这比较繁琐。
 相比之下，Flutter不需要依赖热任何平台的UI组件就能生成UI界面。Flutter唯一需要的就是一个画布，也就是我们常说的Canvas。
 下面是Flutter的渲染过程:
-![2020_09_30_flutter_canvas](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_09_30_flutter_canvas.png)
+![2020_09_30_flutter_canvas](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_09_30_flutter_canvas.png)
 Flutter能够在任何平台上构建完全一模一样的的UI，这种独特的渲染方式是它脱颖而出的关键。
 简而言之，使用Flutter来实现UI和业务逻辑能够节省时间和精力，并且同时不影响最终产品的性能。原来iOS、Android需要每个平台都要配备相应的程序员，使用Flutter只需要一组程序员就可以了，还节省了程序员！
 ##### <span id="jump2_2">2. 节省开发时间</span>
@@ -51,7 +51,7 @@ Flutter能够在任何平台上构建完全一模一样的的UI，这种独特�
 Flutter的 “热重载”功能可以让我们实时看到应用的变化，并且不会丢失当前应用程序的状态。这就是使用Flutter节省开发时间的根本原因。
 此外，Flutter团体还付出了很多努力来提供各种控件。这些控件大多数都可以自定义，这就在构建UI上给我们节省了不少时间。除了众多的核心控件外，Flutter还提供了大量的Material(Android风格)和Cupertino(iOS风格)的控件可以满足不同的设计风格。
 如下图：
-![2020_09_30_services](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_09_30_services.png)
+![2020_09_30_services](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_09_30_services.png)
 总而言之，使用Flutter来开发，我们可以绕过几个程序开发过程中比较耗时的步骤，这样使整个开发过程更快，更简单且更省心。
 
 ##### <span id="jump2_3">3. 更快的迭代速度</span>
@@ -65,7 +65,7 @@ Flutter的 “热重载”功能可以让我们实时看到应用的变化，并
 ##### <span id="jump2_5">5. 丰富的UI动画</span>
 Flutter的一个最大的优势就是可以随时修改屏幕上的任何控件，无论这个控件有多复杂。同样也支持直接使用原生控件来做UI动画。
 下面是一个简单的自定义动画的示例：
-![2020_09_30_animate](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_09_30_animate.png)
+![2020_09_30_animate](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_09_30_animate.png)
 同样的，使用Flutter生成动画更加灵活和通用，并且不会额外增加工作量。过渡动画、圆角、颜色、阴影、变换等，Flutter都能轻松实现。
 [这里](https://itsallwidgets.com/)给大家提供更多的Demo。让我们更好的熟悉这些动画。
 ##### <span id="jump2_6">6. 独立的渲染引擎</span>
@@ -75,10 +75,13 @@ Flutter是使用[Skia](https://github.com/google/skia)作为底层的渲染引�
 除了UI之外，我们还有很多功能需要依赖原生的支持，比如获取GPS信息，蓝牙通信，传感器，照相机，相册等等。这些功能都可以通过Flutter的插件来实现。
 当然有些时候这些插件也是不足以满足我们的需求。但是不用担心，Flutter使用的开发语言（Dart语言）与原生代码通信非常简单。只需要几行代码我们就可以实现原生与Flutter之间的交互，就可以实现任何你想调用原生功能的需求。
 交互流程如下图：
-![2020_09_30_channel](https://raw.githubusercontent.com/Johnson8888/blog_pages/master/images/2020_09_30_channel.png)
+![2020_09_30_channel](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_09_30_channel.png)
 ##### <span id="jump2_8">8. 不只是能运行在移动端</span>
 Flutter不仅是可以在移动设备上使用，还支持Web端和桌面端。在2018年的I / O会议上，Google展示了Flutter Web的技术，这使得在浏览器中运行纯Flutter应用程序成为可能，且不需要修改任何源代码。
 下面是演示视频：
+
+
+
 
 {% raw %}
 
@@ -117,3 +120,5 @@ Flutter不仅是可以在移动设备上使用，还支持Web端和桌面端。�
 - 商业风险控制在最小
 
 所以说，想开发跨平台的，性能优良的应用，Flutter是不二选择。Flutter正式成为最终的跨平台UI框架只是时间问题。
+***
+![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

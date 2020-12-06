@@ -17,7 +17,7 @@ tags:
 ##### 1. 首先打开Python [官网](https://www.python.org/)
 ##### 2. 在官网的主页找到 `Downloads`选项并点击
 ![python_org](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/Inked2020_10_4_python_org_LI.jpg)
-<!--more-->
+
 
 ##### 3. 找到 `Windows`选项 并点击 `Python3.8.5`即可下载Python3安装包
 由于官方在不断更新和维护，所以这里不一定是恰好是`Python3.8.5`，选择自己想安装的版本即可

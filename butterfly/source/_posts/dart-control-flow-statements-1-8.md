@@ -30,8 +30,8 @@ Dart语言的控制语句跟其他常见语言的控制语句是一样的，基�
 - **switch 和 case**
 - **assert**
 
-<!--more-->
-<!-- [文章首发地址](http://fulade.me/dart-control-flow-statements-1-8.html) -->
+
+[文章首发地址](http://fulade.me/dart-control-flow-statements-1-8.html) 
 ##### **If 和 Else**
 Dart 支持 `if - else` 语句，其中 `else` 是可选的，比如下面的例子。
 ```Dart 

@@ -33,7 +33,7 @@ print("Hello Python World!")
 ``` Python
 Hello Python World!
 ```
-<!--more-->
+
 运行文件hello_world.py时，末尾的.py指出这是一个Python程序，因此编辑器将使用Python解释器来运行它。
 Python解释器读取整个程序，确定其中每个单词的含义。例如，看到单词`print`时，解释器就会将括号中的内容打印到屏幕，而不会管括号中的内容是什么。
 编写程序时，编辑器会以各种方式突出程序的不同部分。例如，它知道print是一个函数的名称，因此将其显示为蓝色；它知道"Hello Python world!"不是Python代码，因此将其显示为另一种颜色。这种功能称为`语法突出`。

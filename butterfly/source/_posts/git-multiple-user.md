@@ -21,7 +21,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver
 
 #### **引言**
 由于我在公司的Git源码服务器有一套账号和密码，我个人的Github又有一套账号和密码，这两个账号都需要PUSH和PULL代码，如果对Git使用的不太熟练，经常会遇到`git@github.com: Permission denied (publickey)`这种错误，那么我们该如何同时管理多个Git账号呢？
-<!--more-->
+
 这里我们以MacOS系统为例。
 ##### **同一台电脑两个Git账号且账号相同**
 这里所说的账号相同，指的是：邮箱相同。比如我在公司Gitlab用的账号和Github的账号就是同一个邮箱，这种情况比较好处理，Gitlab和Github在校验的时候是只认邮箱的。只要我们把秘钥，也就是 `id_ras.pub`里面的内容在Gitlab和Github上都配置好就可以了。也就说多个Git源码服务器且都是使用同一个邮箱的情况下，我们只要把`id_ras.pub`配置到多个源码服务器就OK了！

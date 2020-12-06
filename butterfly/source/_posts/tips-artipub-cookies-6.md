@@ -25,7 +25,7 @@ type:
 
 ### artipub
 [ArtiPub](https://github.com/crawlab-team/artipub) (Article Publisher 的简称，意为 "文章发布者") 是一款开源的一文多发平台，可以帮助文章作者将编写好的文章自动发布到掘金、SegmentFault、CSDN、知乎、开源中国等技术媒体平台。
-<!--more-->
+
 点击"更新cookie状态"按钮之后错误如下:
 ``` bash
 (node:72715) UnhandledPromiseRejectionWarning: Error: Request failed with status code 400

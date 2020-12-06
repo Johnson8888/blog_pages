@@ -12,7 +12,7 @@ tags:
 
 ##### **Flutter项目结构**
 了解Flutter的目录结构，可以帮助我们更好的管理和开发项目。这样我们在开发的过程中就会很清楚的知道，iOS代码该放在那里，Android代码该放在那里，Flutter代码该放在哪里，测试代码放在哪里等等。
-<!--more-->
+
 我们以[上一节](http://fulade.me/2020/10/25/flutter-hello-word-1-5/)中创建的`flutter_app`为例，我们用VSCode打开它。 
 ![2020_10_25_vscode_main_dart](https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/2020_10_25_vscode_main_dart.png)
 如图，我们看到了下面这些目录：  

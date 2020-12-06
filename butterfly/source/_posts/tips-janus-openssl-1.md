@@ -22,7 +22,7 @@ type:
 
 > No package 'libssl' found
 No package 'libcrypto' found
-<!--more-->
+
 [文章首发地址](http://fulade.me/tips-janus-openssl-1.html)
 
 在Mac下配置janus-gateway服务器的时候遇到了找不到`libssl`和`libcrypto`错误，

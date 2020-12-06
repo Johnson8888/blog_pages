@@ -12,7 +12,7 @@ date: 2020-10-11 22:53:24
 
 ##### **VSCode是什么**
 Visual Studio Code（简称VS Code）是一个由微软开发，同时支持Windows 、 Linux和macOS等操作系统的免费代码编辑器，它支持测试，并内置了Git 版本控制功能，同时也具有开发环境功能，例如代码补全（类似于 IntelliSense）、代码片段和代码重构等。该编辑器支持用户个性化配置，例如改变主题颜色、键盘快捷方式等各种属性和参数，同时还在编辑器中内置了扩展程序管理的功能。VSCode同样支持Flutter开发，在我的日常开发中会更多的使用VSCode，而不是Android Studio。
-<!--more-->
+
 ##### **下载和安装VSCode**
 打开[VSCode官方网站](https://code.visualstudio.com/)
 ![2020_10_09_download_vscode](https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/2020_10_09_download_vscode.png)

@@ -1,5 +1,5 @@
 ---
-title:【Flutter 1-15】Flutter手把手教程Dart语言——包管理工具Pub详解、pub get,pub cache使用
+title: 【Flutter 1-15】Flutter手把手教程Dart语言——包管理工具Pub详解、pub get,pub cache使用
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'
@@ -8,10 +8,8 @@ authorDesc: 技术改变生活
 toc: true
 comments: true
 date: 2020-12-06 16:26:38
-cover: >-
-  https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg
-thumbnail: >-
-  https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg
+cover: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg
+thumbnail: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg
 tags:
   - Dart语言
   - Dart pub

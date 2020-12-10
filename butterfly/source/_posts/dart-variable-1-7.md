@@ -87,6 +87,14 @@ name = 'Alice'; // Error: a final variable can only be set once.
 const i = 10; // 直接赋值 [Unit of pressure (dynes/cm2)]
 const double j = 1.01325 * i; // 利用其它 const 变量赋值 
 ```
+
+##### 视频教程
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+  <iframe src="//player.bilibili.com/player.html?aid=712880942&bvid=BV1pD4y1X7sN&cid=260806935&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+
+
 本文所有代码都已上传到[Github](https://github.com/Johnson8888/learn_flutter)
 ***  
 ![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

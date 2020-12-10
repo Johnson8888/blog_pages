@@ -167,6 +167,11 @@ assert(urlString.startsWith('https'),'URL ($urlString) should start with "https"
 **注意：**
 在生产环境代码中，断言会被忽略，与此同时传入 `assert` 的参数不被判断。
 
+##### 视频教程
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+<iframe src="//player.bilibili.com/player.html?aid=885429326&bvid=BV1NK4y177BW&cid=261114539&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
 本文所有代码都已上传到[Github](https://github.com/Johnson8888/learn_flutter)
 ***  
 ![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

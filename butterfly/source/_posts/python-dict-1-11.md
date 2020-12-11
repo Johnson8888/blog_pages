@@ -1,5 +1,5 @@
 ---
-title: 【Python 1-10】Python手把手教程之——字典的用法和对字典的管理
+title: 【Python 1-11】Python手把手教程之——字典的用法和对字典的管理
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'

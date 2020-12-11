@@ -8,8 +8,8 @@ authorDesc: 技术改变生活
 toc: true
 comments: true
 date: 2020-12-09 20:18:17
-cover:
-thumbnail:
+cover: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_python.jpg
+thumbnail: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_python.jpg
 tags:
     - Python
     - Python dict

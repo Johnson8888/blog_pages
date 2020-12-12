@@ -31,7 +31,7 @@ type:
 
 #### 下载安装包
 直接去到Anaconda的官网，找到[下载地址](https://www.anaconda.com/products/individual)，点击`Download`按钮，然后找到页面最下方的下载部分。
-![2020_12_11_anaconda_command_installer](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_12_11_anaconda_command_installer.png)
+![2020_12_11_anaconda_download](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_12_11_anaconda_download.png)
 我们可以看到Anaconda提供了两种安装方式，一种是带有图形界面的安装方式`Graphical Installer`，另一种是 以命令行的方式`Command Line Installer`安装。  
 我们选择`64-Bit Graphical Installer`使用图形界面的方式来安装，点击下载。
 #### 安装步骤(基于MacOS)
@@ -43,7 +43,7 @@ type:
  这里也选择`继续`即可。
 ![2020_12_11_anaconda_install_step_2](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_12_11_anaconda_install_step_2.png)
 
-3. 在Mac里面的`启动图`找到刚安装好好的`Anaconda`，名字叫：`Anaconda-Navigator`，点击启动，启动后的样子如下：
+3. 在Mac里面的`启动台`找到刚安装好好的`Anaconda`，名字叫：`Anaconda-Navigator`，点击启动，启动后的样子如下：
 ![2020_12_11_anaconda_launch](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_12_11_anaconda_launch.png)
 
 

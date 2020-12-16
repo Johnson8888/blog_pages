@@ -1,5 +1,5 @@
 ---
-title: 【Flutter 1-15】Flutter手把手教程UI布局和Widget——文本和样式 Text Widget，
+title: 【Flutter 1-15】Flutter手把手教程UI布局和Widget——文本和样式 Text Widget
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'

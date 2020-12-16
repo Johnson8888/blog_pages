@@ -36,7 +36,8 @@ tags:
 [【Flutter 1-13】Flutter手把手教程Dart语言——异步、Future、Stream、async、await详解](http://fulade.me/dart-asynchronous-1-13.html)
 [【Flutter 1-14】Flutter手把手教程Dart语言——Dart语言引用、import、package使用](http://fulade.me/dart-package-1-14.html)
 [【Flutter 1-15】Flutter手把手教程Dart语言——包管理工具Pub详解、pub get,pub cache使用](http://fulade.me/dart-pub-command-1-15.html)
-
+##### **Flutter UI 基础**
+[【Flutter 1-16】Flutter手把手教程UI布局和Widget——文本和样式 Text Widget](http://fulade.me/flutter-ui-text-widget-1-16.html)
 ***
 ### **Python系列**
 [【Python1-0】10个学习Python的理由以及Python的优势有哪些？](http://fulade.me/reason-learn-python-1-0.html)

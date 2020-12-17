@@ -102,11 +102,10 @@ RaisedButton(
     onPressed: () {},
 );
 ````
-效果:
+效果: 
 ![2020_12_17_rased_button_tap](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_12_17_rased_button_tap.gif)
 
 **1.2 不可点击状态**
-如果不设置`onPressed`参数，默认是不可点击的，当然我们依然可以设置不可点击时候的文字颜色和背景颜色。
 ``` dart
 RaisedButton(
     child: Text("不设置onPressed"),
@@ -114,6 +113,7 @@ RaisedButton(
     disabledTextColor: Colors.red,
 );
 ```
+如果不设置`onPressed`参数，默认是不可点击的，当然我们依然可以设置不可点击时候的文字颜色和背景颜色。需要注意`onPressed`是`@required`参数，不建议不传此参数。
 ![2020_12_17_rased_button_no_onpressed](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_12_17_rased_button_no_onpressed.png)
 **1.3 文本颜色**
 ``` dart
@@ -202,6 +202,155 @@ RaisedButton(
 ```
 `elevation`参数可以设置阴影的大小，默认的阴影比较小，可以通过此参数设置更大的阴影大小。
 ![2020_12_17_rased_button_elevation](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_12_17_rased_button_elevation.png)
+
+想体验以上代码运行效果，可以到[我的Github仓库](https://github.com/Johnson8888/learn_flutter)项目`flutter_app`->`lib`->`routes`->`flat_button_page.dart`，可以下载下来运行并体验。
+
+### 2. FlatButton
+`FlatButton`的构造函数参数跟`RaisedButton`参数基本一致，设置方式也是一样的。
+```dart
+  const FlatButton({
+    Key key,
+    /// 点击后的回调
+    @required VoidCallback onPressed,
+    /// 长按后的回调
+    VoidCallback onLongPress,
+    /// 点击 高亮后的回调
+    ValueChanged<bool> onHighlightChanged,
+    /// 鼠标指针的光标进入或悬停在此按钮(这个用于Web端或PC端)
+    MouseCursor mouseCursor,
+    /// 文本的主题，这个跟MaterialApp的属性theme有关
+    ButtonTextTheme textTheme,
+    /// 文字颜色
+    Color textColor,
+    /// 不可点击时的文本颜色
+    Color disabledTextColor,
+    /// 背景颜色
+    Color color,
+    /// 不可点击时的背景颜色
+    Color disabledColor,
+    /// 获取焦点时的颜色(用于Web端或PC端)
+    Color focusColor,
+    /// 指鼠标悬停时的颜色(用于Web端或PC端)
+    Color hoverColor,
+    /// 高亮时的颜色
+    Color highlightColor,
+    /// 水波纹颜色，按下松开会有水波纹效果
+    Color splashColor,
+    /// 按钮主题颜色，默认浅色
+    Brightness colorBrightness,
+    /// 内边距 跟布局有关
+    EdgeInsetsGeometry padding,
+    VisualDensity visualDensity,
+    /// 按钮的形状
+    ShapeBorder shape,
+    /// 切边的样式
+    Clip clipBehavior = Clip.none,
+    FocusNode focusNode,
+    bool autofocus = false,
+    MaterialTapTargetSize materialTapTargetSize,
+    /// 子控件
+    @required Widget child,
+  })
+```
+**2.1 一个最简单的FlatButton**
+``` dart
+FlatButton(
+    child: Text("FlatButton"),
+    onPressed: () {},
+);
+```
+![2020_12_17_flat_button_normal](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_12_17_flat_button_normal.gif)
+我们可以看到相对比于`RaisedButton`，`FlatButton`默认扁平化风格的。
+
+**2.2 设置形状**
+``` dart
+FlatButton(
+    onPressed: () {},   
+    child: Text("椭圆形"),
+    shape: StadiumBorder(),
+);
+```
+通过传入`shape`参数可设置`FlatButton`的形状。需要注意的是：设置好的形状，只有当点击下去的时候才可以看到效果。
+![2020_12_17_flat_button_shape](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_12_17_flat_button_shape.gif)
+其他的 **不可点击状态、文本颜色、背景颜色、高亮颜色、水波纹红色、高亮回调、长按回调**等状态的设置代码跟`RaisedButton`的设置方式一样。    
+
+想体验`FlatButton`的运行效果，可以到[我的Github仓库](https://github.com/Johnson8888/learn_flutter)项目`flutter_app`->`lib`->`routes`->`flat_button_page.dart`，可以下载下来运行并体验。
+
+### 3. OutlineButton
+我们来看`OutlineButton`的构造函数
+``` dart
+const OutlineButton({
+    Key key,
+    /// 点击后的回调
+    @required VoidCallback onPressed,
+    /// 长按后的回调
+    VoidCallback onLongPress,
+    /// 鼠标指针的光标进入或悬停在此按钮(这个用于Web端或PC端)
+    MouseCursor mouseCursor,
+    /// 文本的主题，这个跟MaterialApp的属性theme有关
+    ButtonTextTheme textTheme,
+    /// 文字颜色
+    Color textColor,
+    /// 不可点击时的文本颜色
+    Color disabledTextColor,
+    /// 背景颜色
+    Color color,
+    /// 获取焦点时的颜色(用于Web端或PC端)
+    Color focusColor,
+    /// 指鼠标悬停时的颜色(用于Web端或PC端)
+    Color hoverColor,
+    /// 高亮时的颜色
+    Color highlightColor,
+    /// 水波纹颜色，按下松开会有水波纹效果
+    Color splashColor,
+     /// 高亮时的阴影大小
+    double highlightElevation,
+    /// 边框的延时
+    this.borderSide,
+    /// 不可用时 边框的颜色
+    this.disabledBorderColor,
+    /// 选中时边框的样色
+    this.highlightedBorderColor,
+    /// 内边距 跟布局有关
+    EdgeInsetsGeometry padding,
+    VisualDensity visualDensity,
+    /// 按钮的形状
+    ShapeBorder shape,
+    /// 切边的样式
+    Clip clipBehavior = Clip.none,
+    FocusNode focusNode,
+    bool autofocus = false,
+    /// 子控件
+    Widget child,
+  })
+```
+**3.1 简单的 OutlineButton**
+``` dart
+OutlineButton(
+    onPressed: () {},
+    child: Text("OutlineButton"),
+);
+```
+它的边框默认是灰色的，点击选中的时候会变为蓝色。
+![2020_12_17_outline_button_normal](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_12_17_outline_button_normal.gif)
+**3.2 Border的样式**
+``` dart
+OutlineButton(
+    child: Text("Border颜色"),
+    borderSide: BorderSide(color: Colors.red, width: 2),
+    highlightColor: Colors.yellow,
+    highlightedBorderColor: Colors.green,
+    onPressed: () {},
+);
+```
+`borderSide`可以接收一个`BorderSide`的对象，该对象可以设置颜色和宽度，同样我们也可以通过设置`highlightColor`和`highlightedBorderColor`来设置选中的背景颜色和选中的边框颜色。
+
+![2020_12_17_outline_button_border](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_12_17_outline_button_border.gif)
+
+其他的 **不可点击状态、文本颜色、高亮颜色、水波纹红色、高亮回调、长按回调**等状态的设置代码跟`RaisedButton`的设置方式一样。    
+
+
+想体验`FlatButton`的运行效果，可以到[我的Github仓库](https://github.com/Johnson8888/learn_flutter)项目`flutter_app`->`lib`->`routes`->`outline_button_page.dart`，可以下载下来运行并体验。
 
 
 以上就是Material风格的按钮以及详解，如果你想了解Cupertino风格按钮，可以点击[这里](https://api.flutter.dev/flutter/cupertino/cupertino-library.html)。

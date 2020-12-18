@@ -1,5 +1,5 @@
 ---
-title: 【Flutter 1-17】Flutter手把手教程UI控件——按钮RaisedButton、FlatButton、OutlineButton、IconButton、InkWell等
+title: 【Flutter 1-17】Flutter手把手教程UI控件——【多图预警】按钮RaisedButton、FlatButton、OutlineButton、IconButton
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'
@@ -16,10 +16,9 @@ tags:
     - FlatButton
     - OutlineButton
     - IconButton 
-    - InkWell
 categories: Flutter 
-keywords: Flutter 按钮,Flutter RaiseButton,FlatButton,OutlineButton,IconButton,InkWell
-description: 详解Flutter中的按钮事件和按钮样式，RaisedButton、FlatButton、OutlineButton、IconButton、InkWell等。
+keywords: Flutter 按钮,Flutter RaiseButton,FlatButton,OutlineButton,IconButton
+description: 详解Flutter中的按钮事件和按钮样式，RaisedButton、FlatButton、OutlineButton,IconButton
 photos:
 fileName:
 type:
@@ -30,11 +29,10 @@ type:
 
 Material 风格中常用的按钮有三种`RaiseButton`、`FlatButton`、`OutlineButton`。
 这三种按钮都是继承了`MaterialButton`，而`MaterialButton`又继承自`StatelessWidget`。
-|  按钮   | 说明  |
-|  ----  | ----  |
-| RaiseButton  | 带有阴影效果的按钮，默认带有灰色背景，点击下去会有点击效果和阴影 |
-| FlatButton  | 扁平风格按钮，点击下去会有背景颜色 |
-| OutlineButton  | 带有边框的按钮，且边框会在点击时改变颜色 |
+
+RaiseButton：**带有阴影效果的按钮，默认带有灰色背景，点击下去会有点击效果和阴影。**
+FlatButton: **扁平风格按钮，点击下去会有背景颜色。**
+OutlineButton: **带有边框的按钮，且边框会在点击时改变颜色。**
 
 ### 1. RaisedButton
 我们先来看`RaisedButton`的构造方法
@@ -352,6 +350,47 @@ OutlineButton(
 
 想体验`FlatButton`的运行效果，可以到[我的Github仓库](https://github.com/Johnson8888/learn_flutter)项目`flutter_app`->`lib`->`routes`->`outline_button_page.dart`，可以下载下来运行并体验。
 
+### 4. IconButton
+**4.1 简单的IconButton**
+```dart
+IconButton(
+    icon: Icon(Icons.local_taxi),
+    onPressed: () {},
+);
+```
+
+
+`IconButton`可以接收一个`Icon`类的的参数，Flutter自带了很多`Icon`详情可见[这里](https://material.io/resources/icons/?style=baseline)
+**4.1 带有选中提示的IconButton**
+```dart
+IconButton(
+    icon: Icon(Icons.local_cafe),
+    tooltip: "Cafe Button",
+    color: Colors.red,
+    onPressed: () {},
+);
+```
+通过设置`tooltip`属性，可以设置按钮按下的弹出提示文字。我们这里设置了`Cafe Button`的文字。
+![2020_12_18_icon_button_tool](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_12_18_icon_button_tool.gif)
+
+**4.2 自定义图片的IconButton**
+```dart
+IconButton(
+    icon: Image.asset("images/flutter_icon_100.png"),
+    onPressed: () {},
+);
+```
+我们同样可以提供一个`Image`类型的`Icon`，这样就满足我们设置不同的图片按钮。
+如下图：
+![2020_12_18_icon_button_image](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_12_18_icon_button_image.png)
+
+
+想体验`IconButton`的运行效果，可以到[我的Github仓库](https://github.com/Johnson8888/learn_flutter)项目`flutter_app`->`lib`->`routes`->`icon_button_page.dart`，可以下载下来运行并体验。
+
 
 以上就是Material风格的按钮以及详解，如果你想了解Cupertino风格按钮，可以点击[这里](https://api.flutter.dev/flutter/cupertino/cupertino-library.html)。
 我们日常开发中大多数情况下都会使用Material风格的样式。
+
+
+***
+![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

@@ -83,8 +83,10 @@ TensorFlow提供了不同层次的接口，从低层到高层。越低的层次�
 TensorFlow支持的语言也非常多：Go、Python、C++、Java、Swift、R语音、C#、js等。
 还有运行在Web端的TensorFlow.js，我们可以使用Javascript在网页端进行机器学习的训练和使用。在移动端同样提供支持的是TensorFlowLite，我们可以把在服务器端训练好的模型下发到移动端(Android、iOS、树莓派等)，在移动端通过TensorFlowLite来使用。
 
-
+综上所述，如果要进行人工智能开发，你会选择哪个框架入手呢？ 
 ***
 ![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)
+
+
 
 

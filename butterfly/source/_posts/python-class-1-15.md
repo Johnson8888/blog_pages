@@ -237,6 +237,10 @@ This car has 23600 miles on it.
 
 
 >  小作业
-15-1 用户:创建一个名为 User 的类，其中包含属性 first_name 和 last_name，还有 用户简介通常会存储的其他几个属性。在类 User 中定义一个名为 describe_user()的方 法，它打印用户信息摘要，创建多个表示不同用户的实例，并对每个实例都调用上述两个方法。
-15-2 在为完成练习 15-1 而编写的User类中，添加一个名为login_attempts的属性。编写一个名为increment_login_attempts()的方法，它将属性login_attempts 的值加 1。再编写一个名为 reset_login_attempts()的方法，它将属性login_attempts 的值重置为0。
+15-1 用户:创建一个名为 User 的类，其中包含属性 first_name 和 last_name。在类User中定义一个名为 describe_user()的方 法，它打印用户信息摘要，创建多个表示不同用户的实例，并对每个实例都调用上述两个方法。
+15-2 在为完成练习 15-1 而编写的User类中，添加一个名为login_attempts的属性。编写一个名为increment_login_attempts()的方法，它将属性login_attempts 的值加 1。再编写一个名为 reset_login_attempts()的方法，它将属性login_attempts的值重置为0。
 根据User类创建一个实例，再调用方法increment_login_attempts()多次。打印属性login_attempts的值，确认它被正确地递增;然后，调用方法 reset_login_attempts()，并再次打印属性 login_attempts 的值，确认它被重置为0。
+
+想查看作业答案可以去[我的Githu仓库](https://github.com/Johnson8888/learn_python)在文件夹**15-1_15-2**下
+***
+![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

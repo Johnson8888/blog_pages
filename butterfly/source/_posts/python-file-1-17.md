@@ -180,10 +180,10 @@ with open(filename, 'w') as file_object:
     file_object.write("I love creating new games\n")
 ```
 现在，输出出现在不同行中:
-``` py
+```py
 I love programming.
 I love creating new games.
-``` 
+```
 #### 追加写入文件
 如果你要给文件添加内容，而不是覆盖原有的内容，可以附加模式打开文件。你以**附加模式**打开文件时，Python不会在返回文件对象前清空文件，而你写入到文件的行都将添加到文件末尾。如果指定的文件不存在，Python将为你创建一个空文件。
 ``` py
@@ -193,7 +193,7 @@ with open(filename, 'a') as file_object:
     file_object.write("I love creating apps that can run in a browser.\n")
 ``` 
 我们打开文件时指定了实参`a`，以便将内容附加到文件末尾，而不是覆盖文件原来的内容。然后，我们又写入了两行，它们被添加到文件`programming.txt`末尾:
-``` py
+``` bash
 I love programming.
 I love creating new games.
 I also love finding meaning in large datasets.

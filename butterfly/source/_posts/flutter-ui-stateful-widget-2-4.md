@@ -1,5 +1,5 @@
 ---
-title: 【Flutter 1-19】Flutter手把手教程UI布局和Widget——Statelesswidget与Statefulwidget
+title: 【Flutter 2-4】Flutter手把手教程UI布局和Widget——Statelesswidget与Statefulwidget
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'

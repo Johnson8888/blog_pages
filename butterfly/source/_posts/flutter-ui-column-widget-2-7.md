@@ -11,12 +11,12 @@ date: 2021-01-12 16:30:21
 cover: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg
 thumbnail: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg
 tags:
-  - Flutter Image
-  - Flutter NetworkImage
-  - Flutter AssetImage
+  - Flutter Column
+  - Flutter 布局控件
+  - Flutter Row
 categories: Flutter
-keywords: Flutter 容器，Flutter 控件，Flutter Container
-description: `Column`是在Flutter中常见的布局控件，它负责垂直方向布局。Row负责水平方向布局，二者都是继承于`Flex`，类似于`iOS`里面的`UIScrollView`，但是又有很多不同。
+keywords: Flutter Column，Flutter Row，Flutter 布局控件  
+description: Column 是在Flutter中常见的布局控件，它负责垂直方向布局。Row负责水平方向布局，二者都是继承于`Flex`，类似于`iOS`里面的`UIScrollView`，但是又有很多不同。
 photos:
 fileName:
 type:
@@ -115,7 +115,7 @@ Column({
 
 
 **CrossAxisAlignment.stretch**
-子控件的大小拉伸到与`Column`相同大小
+子控件的宽度拉伸到与`Column`相同大小
 ![2020_01_12_column_crossaxisalignment_stretch](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_01_12_column_crossaxisalignment_stretch.png)
 
 ### textDirection
@@ -149,8 +149,11 @@ Column({
 
 >在上面的描述中有`开始的位置`和`结束的位置`，为什么不直接写`左边`或`右边`，其实也是受`textDirection`的影响，`开始的位置`就是书写开始的位置，`结束的位置`就是写结束的位置。
 
-想体验以上的`Container`的示例的运行效果，可以到[我的Github仓库](https://github.com/Johnson8888/learn_flutter)项目`flutter_app`->`lib`->`routes`->`column_page.dart`查看，并且可以下载下来运行并体验。
+想体验以上的`Column`的示例的运行效果，可以到[我的Github仓库](https://github.com/Johnson8888/learn_flutter)项目`flutter_app`->`lib`->`routes`->`column_page.dart`查看，并且可以下载下来运行并体验。
 
+
+***
+![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)
 
 
 

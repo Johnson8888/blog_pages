@@ -203,3 +203,7 @@ Column(
 ![2020_01_14_flexible_flex_space_full](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_01_14_flexible_flex_space_full.png)
 
 想体验以上示例的运行效果，可以到[我的Github仓库](https://github.com/Johnson8888/learn_flutter)项目`flutter_app`->`lib`->`routes`->`flexible_page.dart`查看，并且可以下载下来运行并体验。
+
+
+***
+![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

@@ -1,5 +1,5 @@
 ---
-title: 【Flutter 2-10】Flutter手把手教程UI布局和Widget——流式布局Warp
+title: 【Flutter 2-10】Flutter手把手教程UI布局和Widget——流式布局Wrap
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'
@@ -15,9 +15,9 @@ tags:
   - Flutter 布局控件
   - Flutter Row
   - Flutter Flexible
-  - Flutter Warp
+  - Flutter Wrap
 categories: Flutter
-keywords: Flutter Column，Flutter Row，Flutter 布局控件， Flutter Flexible，Flutter Warp
+keywords: Flutter Column，Flutter Row，Flutter 布局控件， Flutter Flexible，Flutter Wrap
 description: 在Flutter中Wrap是流式布局控件，Row和Column在布局上是很好用，但是有一个缺点，如果当子控件数量过多导致Row或Column装载不下的时候，就会出现UI页面上的错误。Wrap可以完美的避免这些问题，当控件过多一行显示不全的时候，Wrap可以换行显示。当然`Wrap`跟`Row`和`Column`有着很多相似的地方。
 photos:
 fileName:
@@ -143,3 +143,6 @@ Wrap({
 
 
 想体验以上示例的运行效果，可以到[我的Github仓库](https://github.com/Johnson8888/learn_flutter)项目`flutter_app`->`lib`->`routes`->`wrap_page.dart`查看，并且可以下载下来运行并体验。
+
+***
+![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

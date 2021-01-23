@@ -1,5 +1,5 @@
 ---
-title: Flutter 2-11】Flutter手把手教程UI布局和Widget——列表ListView
+title: 【Flutter 2-11】Flutter手把手教程UI布局和Widget——列表ListView
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'

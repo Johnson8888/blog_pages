@@ -47,10 +47,10 @@ dependencies:
  cd <path-to-my_app>
  pub get
 ```
-`pub get`命令确定当前应用所依赖的包，并将它们保存到中央系统缓存（central system cache）中。如果当前应用依赖了一个公开包，Pub会从Pub站点 该包。对于一个Git依赖，Pub会Clone该Git仓库。
+`pub get`命令确定当前应用所依赖的包，并将它们保存到中央系统缓存（central system cache）中。如果当前应用依赖了一个公开包，Pub会从Pub站点下载该包。对于一个Git依赖，Pub会Clone该Git仓库。
 同样包括包的相关依赖也会被下载。例如，如果 js 包依赖 test 包， pub 会同时获取js包和test包。
 
-Pub 会创建一个.packages 文件（位于应用程序的根路目录下），该文件将应用程序所依赖的每个包名相应的映射到系统缓存中的包。
+Pub 会创建一个.packages 文件（位于应用程序的根目录下），该文件将应用程序所依赖的每个包名相应的映射到系统缓存中的包。
 ![2020_12_06_packages](https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/2020_12_06_packages.png)
 
 #### pub upgrade

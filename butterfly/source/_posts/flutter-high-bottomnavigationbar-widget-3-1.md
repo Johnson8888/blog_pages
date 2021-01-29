@@ -1,5 +1,5 @@
 ---
-title: Flutter 3-1】Flutter手把手教程UI布局和Widget——底部导航栏BottomNavigationBar使用
+title: 【Flutter 3-1】Flutter手把手教程UI布局和Widget——底部导航栏BottomNavigationBar使用
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'
@@ -17,7 +17,7 @@ tags:
   - Flutter 底部导航栏
 categories: Flutter
 keywords: Flutter BottomNavigationBar Row，Flutter 进阶教程， Flutter 项目，底部导航栏
-description: `BottomNavigationBar` 和 `BottomNavigationBarItem` 配合来共同展示Flutter里面的底部状态栏，底部状态栏是在移动端很重要的控件。
+description: BottomNavigationBar 和 BottomNavigationBarItem 配合来共同展示Flutter里面的底部状态栏，底部状态栏是在移动端很重要的控件。
 photos:
 fileName:
 type:
@@ -162,6 +162,9 @@ class _BottomNavigationBarDemoPageState
   链接: https://github.com/TechieBlossom/simpleanimations
   效果如下：
 ![2020_01_29_bottom_th1](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2020_01_29_bottom_th1.gif)
+
+
+想体验以上的示例的运行效果，可以到[我的Github仓库](https://github.com/Johnson8888/learn_flutter)项目`flutter_app`->`lib`->`routes`->`bottom_navigation_page.dart`查看，并且可以下载下来运行并体验。
 
 ***
 ![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

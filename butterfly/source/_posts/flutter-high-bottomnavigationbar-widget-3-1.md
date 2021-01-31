@@ -1,5 +1,5 @@
 ---
-title: 【Flutter 3-1】Flutter手把手教程UI布局和Widget——底部导航栏BottomNavigationBar使用
+title: 【Flutter 3-1】Flutter进阶教程——底部导航栏BottomNavigationBar使用
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'

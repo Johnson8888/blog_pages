@@ -27,11 +27,11 @@ type:
 来源 | 弗拉德（公众号：fulade_me)
 
 ### 路由
-在移动开发中，我们管页面之间的跳转叫做路由。在iOS中只的就是ViewController之间的跳转，在Android中就是Activity之间的跳转。路由是在移动端开发中非常重要的概念，它负责管理着各个页面之间的跳转还有传值工作，是必不可缺少的控件。
+在移动开发中，我们管页面之间的跳转叫做路由。在iOS中指的就是ViewController之间的跳转，在Android中就是Activity之间的跳转。路由是在移动端开发中非常重要的概念，它负责管理着各个页面之间的跳转还有传值工作，是必不可缺少的控件。
 
 ### 路由Map
 为了方便我们管理跳转页面，`Flutter`为我们 提供了路由Map。
-对于路由Map的管理是在`main.dart`文件里面`MaterialApp`的参数`routes`，`routes`参数接受一个Map，Map里面就是我们项目的路由Map，你可以打开我的项目看到`routes`参数如下：
+路由Map由在`main.dart`文件里面`MaterialApp`的参数`routes`管理，`routes`参数接收一个Map，Map里面就是我们项目的路由Map，你可以打开[我的项目](https://github.com/Johnson8888/learn_flutter)看到`routes`参数如下：
 ``` dart
 routes: {
   "/": (context) => MainPage(),
@@ -61,13 +61,13 @@ routes: {
 ``` dart 
     initialRoute: "/",
 ```
-这里的表示的就是Flutter项目的入口页面对于的`key`是`/`，那么就会找到在`routes`中`/`对应的页面，这里也就是`MainPage()`
+这里表示的是Flutter项目的入口页面对应的`key`是`/`，那么就会找到在`routes`中`/`对应的页面，也就是`MainPage()`
 
 > 需要注意的是：
-默认我们新创建的Flutter项目中`MaterialApp`是带有`home`这个参数，它也表示也是入口页面。如果我们想要要使用路由Map的方式来管理路由，一定需要把`home`参数删除掉。
+默认我们新创建的Flutter项目中`MaterialApp`是带有`home`这个参数的，它也表示也是入口页面。如果我们想要要使用路由Map的方式来管理路由，一定需要把`home`参数删除掉。
 
 ###  Navigator.pushNamed
-在我们声明好路由Map之后，我们就可以传入前面的`key`的值来实现页面的跳转工作，这个时候我们需要借助的API就是`Navigator.pushNamed`
+在我们声明好路由Map之后，我们就可以传入前面的`key`的值来实现页面的跳转工作，这个时候我们需要借助的API是`Navigator.pushNamed`
 ``` dart
  @optionalTypeArgs
   static Future<T> pushNamed<T extends Object>(
@@ -79,6 +79,56 @@ routes: {
   }
 ```
 只需要传入路由Map中`key`的值就可以实现跳转。
+代码如下：
+``` dart
+Navigator.pushNamed(context, "RouterDemoPage2");
+```
+> 由于我们是跨平台开发，Flutter帮助我们实现了跳转时候的转场动画，在iOS中动画是从右侧滑入到左侧，返回的时候同样是由左侧滑出到右侧。在Android则是由下方弹出显示到上方，返回的时候是由上方退出到下方弹出。
 
-> 由于我们是跨平台开发，Flutter帮助我们实现了跳转时候的动画，在iOS中动画是从右侧划入到左侧，返回的时候同样是由左侧划出到右侧。在Android则是由下方弹出显示到上方，返回的时候是由上方退出到下方弹出。
+### 跳转传值
+很多时候我们希望跳转的时候可以传值过去，这个时候我们可以通过自定义`MaterialPageRoute`来实现传值。
+``` dart
+MaterialPageRoute({
+    /// builder 方法
+    @required this.builder,
+    /// 配置信息
+    RouteSettings settings,
+    ///  默认情况下，当入栈一个新路由时，原来的路由仍然会被保存在内存中，如果想在路由没用的时候释放其所占用的所有资源，可以设置maintainState为false。
+    this.maintainState = true,
+    ///  表示新页面是否是全屏展示，在iOS中，如果fullscreenDialog为true，新页面将会从屏幕底部滑入
+    bool fullscreenDialog = false,
+})
+```
+我们只需要在构建新的页面的时候传入我们想要传递的参数即可
+``` dart
+Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+  return RouterDemoPage3(passText: "Fulade");
+}));
+```
 
+### 返回传值
+传递返回值我们使用`Navigator`的`pop`方法即可
+``` dart
+Navigator.pop(context, "pop value");
+```
+`pop`方法接收一个参数为返回的携带的参数，如果我们有多个参数，可以把它封装为`List`或`Map`即可。
+
+返回值我们需要在`push`方法后面使用`then`来接收
+```dart
+Navigator.of(context)
+    .push(MaterialPageRoute(builder: (context) {
+  return RouterDemoPage3(passText: "Fulade");
+})).then((value) {
+  setState(() {
+    title = value;
+  });
+});
+```
+> `then`函数 涉及到了Dart语音中很重要的概念 await 和future，后面有机会我们再来详细的说。
+
+
+想体验以上的示例的运行效果，可以到[我的Github仓库](https://github.com/Johnson8888/learn_flutter)项目`flutter_app`->`lib`->`routes`->`router_page.dart`查看，并且可以下载下来运行并体验。
+
+
+***
+![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

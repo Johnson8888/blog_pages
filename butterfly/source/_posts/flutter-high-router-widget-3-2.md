@@ -1,5 +1,5 @@
 ---
-title: 【Flutter 3-1】Flutter进阶教程——路由Router和导航Navigator以及传值
+title: 【Flutter 3-2】Flutter进阶教程——路由Router和导航Navigator以及传值
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'

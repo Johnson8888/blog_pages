@@ -71,6 +71,13 @@ tags:
 [【Python 1-9】Python手把手教程之——元组和元组的使用技巧](http://fulade.me/python-tuple-1-9.html)
 [【Python 1-10】Python手把手教程之——一篇讲透if语句以及if语句的特殊用法](http://fulade.me/python-if-control-1-10.html)
 [【Python 1-11】Python手把手教程之——字典的用法和对字典的管理](http://fulade.me/python-dict-1-11.html)
+[【Python 1-12】Python手把手教程之——用户输入input函数](http://fulade.me/python-input-12.html)
+[【Python 1-13】Python手把手教程之——详解函数和函数的使用](http://fulade.me/python-functions-1-13.html)
+[【Python 1-14】Python手把手教程之——详解函数的高级用法](http://fulade.me/python-functions-1-14.html)
+[【Python 1-15】Python手把手教程之——详解类Class以及类的使用](http://fulade.me/python-class-1-15.html)
+[【Python 1-16】Python手把手教程之——类Class的继承、父类、子类](http://fulade.me/python-class-1-16.html)
+[【Python 1-17】Python手把手教程之——文件的读写以及I/O操作](http://fulade.me/python-file-1-17.html)
+[【Python 1-18】Python手把手教程之——异常处理、try-except、error](http://fulade.me/python-error-1-18.html)
 
 ***
 #### **其他系列**

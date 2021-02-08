@@ -1,5 +1,5 @@
 ---
-title: 【Flutter 3-3】Flutter进阶教程——数据持久化sqflite使用
+title: 【Flutter 3-4】Flutter进阶教程——数据持久化sqflite使用
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'

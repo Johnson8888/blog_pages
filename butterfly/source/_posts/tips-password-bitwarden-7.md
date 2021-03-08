@@ -1,5 +1,5 @@
 ---
-title: LastPass即将收费，是时候更换一款先得密码管理工具了！
+title: LastPass即将收费，是时候更换一款新的密码管理工具了！
 author: 弗拉德
 avatar: 'https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/img/avatar.jpg'
 authorLink: 'http://fulade.me'

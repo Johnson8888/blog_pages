@@ -87,7 +87,9 @@ optional arguments:
 `python3 sherlock tony johnson heisenberg`
 
 #### 实现原理
-作者是把
+作者是把每一个用户的URL地址都去请求了一下，如果有返回结果就代表如在这个昵称的用户，如果没有返回结果或者是404，就意味着不存在当前的用户。
+比如我们请求：
+
 
 ***  
 ![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

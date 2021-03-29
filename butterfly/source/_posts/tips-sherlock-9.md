@@ -86,6 +86,8 @@ optional arguments:
 同时搜索多个名字
 `python3 sherlock tony johnson heisenberg`
 
+#### 实现原理
+作者是把
 
 ***  
 ![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)

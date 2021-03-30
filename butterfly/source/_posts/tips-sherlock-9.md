@@ -25,12 +25,12 @@ type:
 
 ![2021_03_29_sherlock_demo](https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/2021_03_29_sherlock_demo.gif)
 
-不知道有没有小伙伴跟我一样，常常在注册账号的时候输入了昵称都会反馈一个“用户名已存在”，然后尝试了好几个之后才可以成功。  
-今天介绍的这款工具可以帮助我们迅速的检索各大网站有没有我们自己的用户昵称，同样它也可以帮助我们快速的查询同一个用户名昵称都注册了哪些网站。
+不知道有没有小伙伴跟我一样，常常在注册账号的时候输入了昵称往往会反回一个“用户名已存在”，然后尝试了好几个昵称之后才能成功。  
+今天介绍的这款工具可以帮助我们迅速的检索各大网站有没有我们自己的用户昵称，同样它也可以帮助我们快速的查询同一个用户名都注册了哪些网站。
 
 #### 简介
-[sherloc](https://github.com/sherlock-project/sherlock)，在Github上面已经有23.7k的Star数。它的名字取自于《神探夏洛克》的英文名字——sherlock。
-sherlock主要使用Python3来开发完成的，这使它具有更多的灵活性，可以运行在Windows、Mac以及Linux上面。
+[sherloc](https://github.com/sherlock-project/sherlock)，在Github上面已经有24k的Star数，它的名字取自于电影《神探夏洛克》的英文名字——sherlock。
+sherlock主要使用Python3来开发完成的，这使得它具有更多的灵活性，可以运行在Windows、Mac以及Linux操作系统上。
 
 #### 安装步骤 
 我们这里以Linux为例
@@ -62,8 +62,8 @@ optional arguments:
   -h, --help           #展示帮助页面
   --version            # 输出当前的版本号以及项目的依赖
   --verbose, -v, -d, --debug # Log的输出等级
-  --folderoutput FOLDEROUTPUT, -fo FOLDEROUTPUT #如果需要同时查询多个用户名，可以在这里定义传入保持结果的文件夹路径
-  --output OUTPUT, -o OUTPUT  # 当只查询一个名字的时候，指定的保持结果的文件夹
+  --folderoutput FOLDEROUTPUT, -fo FOLDEROUTPUT #如果需要同时查询多个用户名，可以在这里定义传入保存结果的文件夹路径
+  --output OUTPUT, -o OUTPUT  # 当只查询一个名字的时候，指定的保村结果的文件夹
   --tor, -t             # 通过Tor来发送请求，Tor必须安装在系统目录里面
   --unique-tor, -u      # 通过Tor来发送请求，并且每次都使用新的连接
   --csv                 # 创建CVS文件
@@ -77,18 +77,66 @@ optional arguments:
   --browse, -b          # 使用默认浏览器打开所有的搜索结果
   --local, -l           # 强制使用本地的 data.json文件
 ```
-使用方法也很简单
-搜索单个名字
-`python3 sherlock user123`
+使用方法也很简单，搜索单个名字，只需要在命令行输入：
+`python3 sherlock username`
 比如我们搜索`川建国`
 搜索结果如下：
+![2021_03_29_sherlock_search](https://cdn.jsdelivr.net/gh/Johnson8888/blog_pages/images/2021_03_29_sherlock_search.png)
 
 同时搜索多个名字
-`python3 sherlock tony johnson heisenberg`
+`python3 sherlock tony heisenberg johnson`
+搜索结果如下：
+``` 
+[*] Checking username tony on:
+[+] 3dnews: http://forum.3dnews.ru/member.php?username=tony
+[+] 7Cups: https://www.7cups.com/@tony
+[+] 9GAG: https://www.9gag.com/u/tony
+[+] About.me: https://about.me/tony
+[+] Academia.edu: https://independent.academia.edu/tony
+[+] AllTrails: https://www.alltrails.com/members/tony
+....
+[+] Anobii: https://www.anobii.com/tony/profile
+[+] Apple Discussions: https://discussions.apple.com/profile/tony
+[+] Archive.org: https://archive.org/details/@tony
+[+] Asciinema: https://asciinema.org/~tony
+[+] AskFM: https://ask.fm/tony
+
+[*] Checking username heisenberg on:
+[+] 9GAG: https://www.9gag.com/u/heisenberg
+[+] About.me: https://about.me/heisenberg
+[+] Academia.edu: https://independent.academia.edu/heisenberg
+[+] AllTrails: https://www.alltrails.com/members/heisenberg
+[+] Anobii: https://www.anobii.com/heisenberg/profile
+[+] Archive.org: https://archive.org/details/@heisenberg
+...
+[+] Asciinema: https://asciinema.org/~heisenberg
+[+] AskFM: https://ask.fm/heisenberg
+[+] Audiojungle: https://audiojungle.net/user/heisenberg
+[+] BLIP.fm: https://blip.fm/heisenberg
+[+] BOOTH: https://heisenberg.booth.pm/
+
+[*] Checking username johnson on:
+[+] 7Cups: https://www.7cups.com/@johnson
+[+] 9GAG: https://www.9gag.com/u/johnson
+[+] About.me: https://about.me/johnson
+[+] Academia.edu: https://independent.academia.edu/johnson
+[+] AllTrails: https://www.alltrails.com/members/johnson
+...
+[+] Anobii: https://www.anobii.com/johnson/profile
+[+] Archive.org: https://archive.org/details/@johnson
+[+] Audiojungle: https://audiojungle.net/user/johnson
+[+] BLIP.fm: https://blip.fm/johnson
+[+] Bandcamp: https://www.bandcamp.com/johnson
+```
+多个搜索结果会按顺序来展示
+
+#### 支持Docker
+作者也增加了对docker的支持，我们只需要执行`docker build -t mysherlock-image .`就可以在docker中使用sherklock了。
+更多有关docker的使用方法可以去[github主页](https://github.com/sherlock-project/sherlock)查看
 
 #### 实现原理
-作者是把每一个用户的URL地址都去请求了一下，如果有返回结果就代表如在这个昵称的用户，如果没有返回结果或者是404，就意味着不存在当前的用户。
-比如我们请求：
+作者是把每一个用户的URL地址都去请求一下，如果有返回有结果就代表存在这个昵称，如果没有返回结果或者是404，就意味着不存在当前的用户。
+比如请求：`https://www.about.me/tony`,可以请求到结果就代表存在这个昵称，如果没有相应的返回就是没有这个昵称。
 
 
 ***  

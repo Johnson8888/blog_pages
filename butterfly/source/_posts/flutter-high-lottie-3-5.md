@@ -8,12 +8,14 @@ authorDesc: 技术改变生活
 toc: true
 comments: true
 date: 2021-04-07 17:05:56
-cover:
-thumbnail:
-tags:
-categories:
-keywords:
-description:
+cover: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2021_04_21_lottie_tag.png
+thumbnail: https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/2021_04_21_lottie_tag.png
+tags: 
+  - Flutter lottie
+  - Lottie 动画
+categories: Flutter 
+keywords: Flutter lottie、Lottie 动画
+description: 在Flutter中使用Lottie动画
 photos:
 fileName:
 type:

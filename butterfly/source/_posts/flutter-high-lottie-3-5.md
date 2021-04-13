@@ -69,6 +69,6 @@ Lottie.network("https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/lottie
 
 好了，关于`Lottie`的使用就总结这些了。
 
-想体验以上的示例的运行效果，可以到[我的Github仓库](https://github.com/Johnson8888/learn_flutter)项目`flutter_app`->`lib`->`routes`->`sqflite_page.dart`查看，并且可以下载下来运行并体验。
+想体验以上的示例的运行效果，可以到[我的Github仓库](https://github.com/Johnson8888/learn_flutter)项目`flutter_app`->`lib`->`routes`->`lottie_demo_page.dart`查看，并且可以下载下来运行并体验。
 ***
 ![公众号](https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_footer.jpg)
